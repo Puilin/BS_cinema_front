@@ -7833,7 +7833,6 @@ header .navbar-default .flex-parent {
 }
 header .navbar-default .flex-parent .menu-left {
   flex-grow: 2;
-  margin-left: 30px;
 }
 header .navbar-default .navbar-nav {
   display: -webkit-flex;
@@ -8120,10 +8119,10 @@ header#headerv3-light {
     color: #9575cd;
   }
   header .menu-left {
-    margin-left: 0 !important;
+    margin-left: 10px !important;
   }
   header img.logo {
-    width: 18%;
+    width: 16%;
   }
 }
 @media (max-width: 767px) {
@@ -8134,8 +8133,9 @@ header#headerv3-light {
     padding: 10px 0;
   }
   header .navbar-default img.logo {
-    width: 30%;
+    width: 42%;
     margin-top: 5px;
+    
   }
 }
 footer {
