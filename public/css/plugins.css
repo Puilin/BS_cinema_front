@@ -2438,7 +2438,7 @@
 .slick-next:hover,
 .slick-next:focus
 {
-    color: #dcf836;
+    color: #9575cd;
     outline: none;
     background: transparent;
 }
@@ -2448,7 +2448,7 @@
 .slick-next:focus:before
 {
     opacity: 1;
-    color: #dcf836;
+    color: #9575cd;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before
@@ -2567,7 +2567,7 @@
 .slick-dots li button:focus:before
 {
     opacity: 1;
-    background-color: #dcf836;
+    background-color: #9575cd;
 }
 .slick-dots li button:before
 {
@@ -2591,7 +2591,7 @@
 {
     opacity: 1;
     // color: black;
-    background-color: #dcf836;
+    background-color: #9575cd;
 }
 
 /* Slider */
