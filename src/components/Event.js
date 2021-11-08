@@ -6,6 +6,7 @@ class Event extends Component {
         <div>
         <div class="title-hd">
 			<h2>이벤트</h2>
+      <a href="#" class="viewall">View all <i class="ion-ios-arrow-right"></i></a>
         </div>
         <div class="tabs">
             <div class="event-table">
