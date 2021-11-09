@@ -8285,3 +8285,20 @@ footer.full-width-ft .ft-copyright {
   font-family: 'Dosis', sans-serif;
   font-weight: 700;
 }
+
+/* 사용자 정의 css */
+div.event-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-color: #abb7c4;
+  border-width: 1px;
+  border-style: solid;
+  color: #abb7c4;
+}
+
+div.event-table td, div.event-table th {
+  border-width: 1px;
+  border-color: #abb7c4;
+  border-style: solid;
+  color: #ffffff;
+}
