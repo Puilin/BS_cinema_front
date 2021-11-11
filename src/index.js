@@ -3,20 +3,52 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import Navbar from './components/Navbar'
+import Search from './components/search_bar';
+import Movieinfo from './components/movieinfo';
+import NoticeInfo from './components/noticeinfo';
 import reportWebVitals from './reportWebVitals';
-
-ReactDOM.render(
-  <React.StrictMode>
-  <App></App>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import Movie_slider from './components/Slider_movieitem';
 
 ReactDOM.render(
   <React.StrictMode>
   <Navbar></Navbar>
   </React.StrictMode>,
   document.getElementById('navb')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+  <Search></Search>
+  </React.StrictMode>,
+  document.getElementById('search-bar')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+  <Movie_slider></Movie_slider>
+  </React.StrictMode>,
+  document.getElementById('movieitem-slider')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+  <Movieinfo></Movieinfo>
+  </React.StrictMode>,
+  document.getElementById('movie-info')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+  <NoticeInfo></NoticeInfo>
+  </React.StrictMode>,
+  document.getElementById('notice-info')
+);
+
+ReactDOM.render(
+  <React.StrictMode>
+  <App></App>
+  </React.StrictMode>,
+  document.getElementById('event-info')
 );
 
 // If you want to start measuring performance in your app, pass a function

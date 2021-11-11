@@ -5014,7 +5014,8 @@ ul {
   margin-bottom: 60px;
 }
 .ads img {
-  width: 100%;
+  width: 50%;
+  margin-left: 300px;
 }
 .adsv2 {
   display: -webkit-flex;
