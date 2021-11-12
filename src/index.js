@@ -17,13 +17,6 @@ ReactDOM.render(
 
 ReactDOM.render(
   <React.StrictMode>
-  <Movie_slider></Movie_slider>
-  </React.StrictMode>,
-  document.getElementById('movieitem-slider')
-);
-
-ReactDOM.render(
-  <React.StrictMode>
   <Movieinfo></Movieinfo>
   </React.StrictMode>,
   document.getElementById('movie-info')

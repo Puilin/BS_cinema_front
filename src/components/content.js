@@ -1,10 +1,11 @@
 import { Component } from 'react';
+import Movie_slider from './index_/Slider_movieitem';
 
 class Content extends Component {
     render() {
         return (
             <div>
-            <div id="movieitem-slider"></div>
+            <Movie_slider page={this.props.page}></Movie_slider>
       <div class="movie-items">
         <div class="container">
           <div class="row ipad-width">

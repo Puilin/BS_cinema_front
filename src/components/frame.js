@@ -24,7 +24,7 @@ class Frame extends Component {
         <Search page={this.state.page}></Search>
       </div>
     </header>
-    <Content></Content>
+    <Content page={this.state.page}></Content>
     </div>
         );
     }
