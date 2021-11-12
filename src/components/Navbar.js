@@ -13,7 +13,11 @@ class Navbar extends Component {
                               <a href="#page-top"></a>
                           </li>
                 <li>
-                  <a href="index.html">홈</a>
+                  <a href="index.html"
+                  onClick={function(e){
+                    e.preventDefault();
+                    this.props.onChangePage("main");
+                  }.bind(this)}>홈</a>
                 </li>
                 <li class="dropdown first">
                   <a
@@ -24,7 +28,11 @@ class Navbar extends Component {
                     영화<i class="fa fa-angle-down" aria-hidden="true"></i>
                   </a>
                   <ul class="dropdown-menu level1">
-                    <li><a href="moviegridfw_light.html">전체영화</a></li>
+                    <li><a href="moviegridfw_light.html"
+                        onClick={function(e){
+                          e.preventDefault();
+                          this.props.onChangePage("movie");
+                        }.bind(this)}>전체영화</a></li>
                     <li><a href="movielist.html">현재상영작</a></li>
                     <li><a href="moviesingle.html">개봉예정작</a></li>
                   </ul>

@@ -2,25 +2,17 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Navbar from './components/Navbar'
-import Search from './components/search_bar';
-import Movieinfo from './components/movieinfo';
-import NoticeInfo from './components/noticeinfo';
+import Frame from './components/frame';
+import Movieinfo from './components/index_/movieinfo';
+import NoticeInfo from './components/index_/noticeinfo';
 import reportWebVitals from './reportWebVitals';
-import Movie_slider from './components/Slider_movieitem';
+import Movie_slider from './components/index_/Slider_movieitem';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Navbar></Navbar>
+  <Frame></Frame>
   </React.StrictMode>,
-  document.getElementById('navb')
-);
-
-ReactDOM.render(
-  <React.StrictMode>
-  <Search></Search>
-  </React.StrictMode>,
-  document.getElementById('search-bar')
+  document.getElementById('frame')
 );
 
 ReactDOM.render(
