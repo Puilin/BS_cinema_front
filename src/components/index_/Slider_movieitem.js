@@ -182,7 +182,7 @@ class Movie_slider extends Component {
       </div>
         );
       } else {
-        return (<div></div>);
+        return (<div class="slider movie-items"></div>);
       }
     }
   }
