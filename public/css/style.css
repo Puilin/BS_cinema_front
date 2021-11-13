@@ -5689,8 +5689,8 @@ ul {
   margin-left: -120px;
 }
 .user-hero ul.breadcumb {
-  text-align: ;
-  margin-left: 25.5%;
+  text-align: center;
+  margin-right: 80px;
 }
 @media (max-width: 991px) {
   .user-hero {
@@ -8305,5 +8305,14 @@ div.event-table td, div.event-table th {
 }
 
 progress.membership_exp {
+  -webkit-appearance: none;
   margin-left: 20px;
+}
+
+::-webkit-progress-bar {
+  background-color: grey;
+}
+
+::-webkit-progress-value {
+  background-color: #9575cd;
 }

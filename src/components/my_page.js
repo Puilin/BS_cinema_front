@@ -11,8 +11,8 @@ class MyPage extends Component {
 					<h1>이동호 님의 프로필</h1>
 					<ul class="breadcumb">
 						<li>Lv.1</li>
-                        <li><progress class="membership_exp" value="10" max="100"></progress></li>
-						<li> <span class="ion-ios-arrow-right"></span>Profile</li>
+                        <li><progress title="결제 금액 : 50000/150000" class="membership_exp" value="50000" max="150000"></progress></li>
+						<li> <span class="ion-ios-arrow-right"></span>Lv.2</li>
 					</ul>
 				</div>
 			</div>
