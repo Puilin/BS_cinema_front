@@ -1,11 +1,18 @@
 import './App.css';
-import { Component } from 'react';
-import Event from "./components/index_/Event";
+import React, { Component } from 'react';
+//import {  BrowserRouter, Route, Switch  } from 'react-router-dom';
+import Store from './components/Store';
 
+
+//import Movie from './components/Movie';
 
 class App extends Component {
   render() {
-    return;
+    return (
+      <div>
+      
+      </div>
+    );
   }
 }
 

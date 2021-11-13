@@ -4275,8 +4275,8 @@ ul {
 }
 @media (max-width: 767px) {
   .movie-item-style-2 .mv-item-infor {
-    max-width: 180px;
-    margin: 0 auto;
+    max-width: 200px;
+    margin: 20;
   }
 }
 .movie-item-style-2 .mv-item-infor h6 {

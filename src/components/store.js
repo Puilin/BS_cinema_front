@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 
+
 class Store extends Component {
   render() {
+    const imagestyle = {
+      height: "auto",  //this is wrong
+            width: "auto",
+                };
     return(
       <div>
       <div class="buster-light">
@@ -20,6 +25,7 @@ class Store extends Component {
           </div>
         </div>
         </div>
+       
       <div>
       <div class="page-single">
         <div class="container">
@@ -27,18 +33,25 @@ class Store extends Component {
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="flex-wrap-movielist mv-grid-fw">
                 <div class="movie-item-style-2 movie-item-style-1">
-                  <img src="images/uploads/mv1.jpg" alt="" />
+                  <img src="/images/single.png" style={imagestyle} alt="" />
                   <div class="hvr-inner">
-                    <a href="moviesingle.html">
+                    <a href="moviesingle.html"
+                      href="index.html"
+                      onClick={function(e){
+                      e.preventDefault();
+                      this.props.onChangePage("store_details");
+                      window.scrollTo(0, 0);
+                    }.bind(this)}>
                       상세정보 <i class="ion-android-arrow-dropright"></i>
                     </a>
                   </div>
                   <div class="mv-item-infor">
                     <h6><a href="#">싱글콤보</a></h6>
+                      <span>팝콘(L) 1 + 탄산음료(R) 2</span>
                   </div>
                 </div>
                 <div class="movie-item-style-2 movie-item-style-1">
-                  <img src="images/uploads/mv2.jpg" alt="" />
+                  <img src="/images/double.png" alt="" />
                   <div class="hvr-inner">
                     <a href="moviesingle.html">
                       상세정보 <i class="ion-android-arrow-dropright"></i>
@@ -46,45 +59,10 @@ class Store extends Component {
                   </div>
                   <div class="mv-item-infor">
                     <h6><a href="#">더블콤보</a></h6>
-                      <span>팝콘(L) 1 + 탄산음료(R) 1</span>
+                      <span>팝콘(L) 2 + 탄산음료(R) 2</span>
                   </div>
                 </div>
-                <div class="movie-item-style-2 movie-item-style-1">
-                  <img src="images/uploads/mv-item3.jpg" alt="" />
-                  <div class="hvr-inner">
-                    <a href="moviesingle.html">
-                      상세정보 <i class="ion-android-arrow-dropright"></i>
-                    </a>
-                  </div>
-                  <div class="mv-item-infor">
-                    <h6><a href="#">Die hard</a></h6>
-                    <p class="rate">
-                      <i class="ion-android-star"></i><span>7.4</span> /10
-                    </p>
-                  </div>
-                </div>
-                <div class="movie-item-style-2 movie-item-style-1">
-                  <img src="images/uploads/mv-item4.jpg" alt="" />
-                  <div class="hvr-inner">
-                    <a href="moviesingle.html">
-                      상세정보 <i class="ion-android-arrow-dropright"></i>
-                    </a>
-                  </div>
-                  <div class="mv-item-infor">
-                    <h6><a href="#">The walk</a></h6>
-                    <p class="rate">
-                      <i class="ion-android-star"></i><span>7.4</span> /10
-                    </p>
-                  </div>
-                </div>
-                <div class="movie-item-style-2 movie-item-style-1">
-                  <img src="images/uploads/mv3.jpg" alt="" />
-                  <div class="hvr-inner">
-                  <a href="moviesingle.html">
-                      상세정보 <i class="ion-android-arrow-dropright"></i>
-                    </a>
-                  </div>
-                </div>
+               
               </div>
             </div>
           </div>
