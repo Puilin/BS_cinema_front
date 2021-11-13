@@ -1,64 +1,9 @@
 import React, { Component } from 'react';
 import {  Link  } from 'react-router-dom';
-import './Tab'
+
 
 class Store extends Component{
-  function Tabs() {
-    const [toggleState, setToggleState] = useState(1);
-  
-    const toggleTab = (index) => {
-      setToggleState(index);
-    };
-  
-    return (
-      <div className="container">
-        <div className="bloc-tabs">
-          <button
-            className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(1)}
-          >
-            팝콘/음료
-          </button>
-          <button
-            className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(2)}
-          >
-            관람권
-          </button>
-          <button
-            className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
-            onClick={() => toggleTab(3)}
-          >
-            굿즈
-          </button>
-        </div>
-  
-        <div className="content-tabs">
-          <div
-            className={toggleState === 1 ? "content  active-content" : "content"}
-          >
-            <h2>Content 1</h2>
-            <hr />
-          </div>
-  
-          <div
-            className={toggleState === 2 ? "content  active-content" : "content"}
-          >
-            <h2>Content 2</h2>
-            <hr />
-          </div>
-  
-          <div
-            className={toggleState === 3 ? "content  active-content" : "content"}
-          >
-            <h2>Content 3</h2>
-            <hr />
-          </div>
-        </div>
-      </div>
-    );
-  }
-  render(){
+  render() {
     return(
       <div>
       <div class="buster-light">
@@ -78,13 +23,25 @@ class Store extends Component{
         </div>
       </div>
       <div>
-      <Tabs></Tabs>
-
-        <Link to = "./Tab.js">
-        <button onClick={this}>팝콘/음료</button>
-        </Link>
-        <button>관람권</button>
-        <button>굿즈</button>
+      <section id="movie">
+        <div class="container">
+            <div class="row">
+                <div class="movie">
+                    <h2 class="ir_so">영화 예매</h2>
+                    <div class="movie_title">
+                        <ul>
+                            <li onClick={this} class="active"><a href="#">박스오피스</a></li>
+                            <li><a href="#">최신개봉작</a></li>
+                            <li><a href="#">상영예정작</a></li>
+                            <li><a href="#">큐레이션</a></li>
+                        </ul>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    </section>
+                    </div>
+      <div>
         </div>
       <div>
       <div class="page-single">
@@ -159,8 +116,8 @@ class Store extends Component{
     </div>
     </div>
     </div>
-  
-);}
+    );
+  }}
       
       
 export default Store;

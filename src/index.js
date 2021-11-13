@@ -9,7 +9,8 @@ import NoticeInfo from './components/noticeinfo';
 import reportWebVitals from './reportWebVitals';
 import Movie_slider from './components/Slider_movieitem';
 import {  BrowserRouter } from 'react-router-dom';
-import Movie from './components/Movie';
+
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -55,9 +56,9 @@ ReactDOM.render(
 
 // ReactDOM.render(
 //   <React.StrictMode>
-//   <Movie></Movie>
+//   <Store></Store>
 //   </React.StrictMode>,
-//   document.getElementById('movie')
+//   document.getElementById('store')
 // );
 
 ReactDOM.render(
