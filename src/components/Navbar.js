@@ -73,6 +73,10 @@ class Navbar extends Component {
                     class="btn btn-default dropdown-toggle lv1"
                     data-toggle="dropdown"
                     data-hover="dropdown"
+                    onClick={function(e){
+                          e.preventDefault();
+                          this.props.onChangePage("store");
+                    }.bind(this)}
                   >
                     스토어</a>
                 </li>
