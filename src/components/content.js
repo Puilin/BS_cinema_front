@@ -1,39 +1,14 @@
 import { Component } from 'react';
-import Movie_slider from './index_/Slider_movieitem';
-import Movieinfo from './index_/movieinfo';
-import Event from './index_/Event';
-import NoticeInfo from './index_/noticeinfo';
+import Main_A from './main_before_login';
+import Movie from './movie';
 
 class Content extends Component {
     render() {
-        return (
-            <div>
-              <Movie_slider></Movie_slider>
-              <div class="movie-items">
-                <div class="container">
-                  <div class="row ipad-width">
-                    <Movieinfo></Movieinfo>
-                    <Event></Event>
-                  </div>
-                </div>
-              </div>
-              <div class="ads">
-                <img
-                src="images/uploads/ads2.png"
-                alt=""
-                width="309"
-                height="45"
-                />
-              </div>
-              <div class="latestnew">
-                <div class="container">
-                  <div class="row ipad-width">
-                    <NoticeInfo></NoticeInfo>
-                  </div>
-                </div>
-              </div>
-            </div>
-        );
+      if (this.props.page === "main") {
+        return (<Main_A></Main_A>);
+      } else if (this.props.page === "movie") {
+        return (<Movie></Movie>);
+      }
     }
 }
 
