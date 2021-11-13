@@ -3,6 +3,7 @@ import Main_A from './main_before_login';
 import Movie from './movie';
 import Store from './store';
 import Theater from './theater';
+import MyPage from './my_page';
 
 class Content extends Component {
     render() {
@@ -14,6 +15,8 @@ class Content extends Component {
         return (<Theater></Theater>);
       } else if (this.props.page === "store") {
         return (<Store></Store>);
+      } else if (this.props.page === "mypage") {
+        return (<MyPage></MyPage>);
       }
     }
 }

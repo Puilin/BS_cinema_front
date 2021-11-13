@@ -452,21 +452,21 @@ $(function(){
 		$(this).wrap('<div class="overlay"></div>')
 	});
 	//pop up for login form
-    loginLink.on('click', function(event){
-    	event.preventDefault();
-    	loginct.parents(overlay).addClass("openform");
-		$(document).on('click', function(e){
-		var target = $(e.target);
-		if ($(target).hasClass("overlay")){
-				$(target).find(loginct).each( function(){
-					$(this).removeClass("openform");
-				});
-				setTimeout( function(){
-					$(target).removeClass("openform");
-				}, 350);
-			}	
-		});
-    });
+    // loginLink.on('click', function(event){
+    // 	event.preventDefault();
+    // 	loginct.parents(overlay).addClass("openform");
+	// 	$(document).on('click', function(e){
+	// 	var target = $(e.target);
+	// 	if ($(target).hasClass("overlay")){
+	// 			$(target).find(loginct).each( function(){
+	// 				$(this).removeClass("openform");
+	// 			});
+	// 			setTimeout( function(){
+	// 				$(target).removeClass("openform");
+	// 			}, 350);
+	// 		}	
+	// 	});
+    // });
     //pop up for signup form
     signupLink.on('click', function(event){
     	event.preventDefault();

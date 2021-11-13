@@ -16,11 +16,14 @@ class Frame extends Component {
             <div>
             <header class="ht-header">
       <div class="container">
-        <Navbar onChangePage={function(code){
-            this.setState({
-                page: code,
-            });
-        }.bind(this)}></Navbar>
+        <Navbar
+            onChangePage={function(code){
+                this.setState({
+                    page: code,
+                });
+            }.bind(this)}
+            is_logined={this.state.is_logined}
+        ></Navbar>
         <Search page={this.state.page}></Search>
       </div>
     </header>
