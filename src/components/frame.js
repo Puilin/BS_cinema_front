@@ -24,7 +24,14 @@ class Frame extends Component {
         <Search page={this.state.page}></Search>
       </div>
     </header>
-    <Content page={this.state.page}></Content>
+    <Content 
+        page={this.state.page}>
+        onChangePage={function(code){
+            this.setState({
+                page: code,
+            });
+        }.bind(this)}
+    </Content>
     </div>
         );
     }
