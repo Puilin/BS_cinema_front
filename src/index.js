@@ -8,20 +8,11 @@ import Movie_slider from './components/index_/Slider_movieitem';
 import App from './App';
 import Store from './components/Store';
 
-
-
 ReactDOM.render(
   <React.StrictMode>
   <Frame></Frame>
   </React.StrictMode>,
   document.getElementById('frame')
-);
-
-ReactDOM.render(
-  <React.StrictMode>
-  <Store></Store>
-  </React.StrictMode>,
-  document.getElementById('store')
 );
 
 

@@ -1,6 +1,6 @@
 import { Component } from 'react';
 import Main_A from './main_before_login';
-import Movie from './movie';
+import Movie from './Movie';
 import Store from './Store';
 class Content extends Component {
     render() {
