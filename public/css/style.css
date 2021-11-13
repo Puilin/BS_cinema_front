@@ -5011,7 +5011,7 @@ ul {
   color: #9575cd;
 }
 .ads {
-  margin-bottom: 60px;
+  background: #020d18;
 }
 .ads img {
   width: 50%;
@@ -8159,7 +8159,7 @@ footer .flex-parent-ft {
     display: flex;
     flex-direction: column;
     max-width: 550px;
-    margin: 0 auto;
+    margin: 0;
   }
 }
 @media (max-width: 991px) {

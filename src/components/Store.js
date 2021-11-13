@@ -30,7 +30,7 @@ class Store extends Component{
                     <h2 class="ir_so">영화 예매</h2>
                     <div class="movie_title">
                         <ul>
-                            <li onClick={this} class="active"><a href="#">박스오피스</a></li>
+                            <li class="active"><a href="#">박스오피스</a></li>
                             <li><a href="#">최신개봉작</a></li>
                             <li><a href="#">상영예정작</a></li>
                             <li><a href="#">큐레이션</a></li>

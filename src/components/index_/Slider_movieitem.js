@@ -2,8 +2,8 @@ import { Component } from 'react';
 
 class Movie_slider extends Component {
     render() {
-      return (
-        <div class="slider movie-items">
+        return (
+          <div class="slider movie-items">
         <div class="container">
           <div class="row">
             <div class="social-link">
@@ -179,7 +179,7 @@ class Movie_slider extends Component {
           </div>
         </div>
       </div>
-      );
+        );
     }
   }
   
