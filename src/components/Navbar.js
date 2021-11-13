@@ -18,6 +18,7 @@ class Navbar extends Component {
                     e.preventDefault();
                     this.props.onChangePage("main");
                     window.location.reload(false);
+                    window.scrollTo(0, 0);
                   }.bind(this)}>홈</a>
                 </li>
                 <li class="dropdown first">
@@ -25,18 +26,14 @@ class Navbar extends Component {
                     class="btn btn-default dropdown-toggle lv1"
                     data-toggle="dropdown"
                     data-hover="dropdown"
-                  >
-                    영화<i class="fa fa-angle-down" aria-hidden="true"></i>
-                  </a>
-                  <ul class="dropdown-menu level1">
-                    <li><a href="moviegridfw_light.html"
-                        onClick={function(e){
+                    onClick={function(e){
                           e.preventDefault();
                           this.props.onChangePage("movie");
-                        }.bind(this)}>전체영화</a></li>
-                    <li><a href="movielist.html">현재상영작</a></li>
-                    <li><a href="moviesingle.html">개봉예정작</a></li>
-                  </ul>
+                          window.scrollTo(0, 0);
+                    }.bind(this)}
+                  >
+                    영화
+                  </a>
                 </li>
                 <li class="dropdown first">
                   <a
@@ -53,26 +50,25 @@ class Navbar extends Component {
                     </li>
                   </ul>
                 </li>
-                              <li class="dropdown first">
+                <li class="dropdown first">
                   <a
                     class="btn btn-default dropdown-toggle lv1"
                     data-toggle="dropdown"
                     data-hover="dropdown"
-                  >
-                    극장<i class="fa fa-angle-down" aria-hidden="true"></i>
+                    onClick={function(e){
+                          e.preventDefault();
+                          this.props.onChangePage("theater");
+                          window.scrollTo(0, 0);
+                    }.bind(this)}
+                  >극장
                   </a>
-                  <ul class="dropdown-menu level1">
-                    <li class="dropdown">
-                    </li>
-                    <li><a href="movielist.html">전체극장</a></li>
-                    <li><a href="moviesingle.html">특별관</a></li>
-                  </ul>
                 </li>
                 <li class="dropdown first">
                 <a href="index.html"
                   onClick={function(e){
                     e.preventDefault();
                     this.props.onChangePage("store");
+                    window.scrollTo(0, 0);
                   }.bind(this)}>
                     스토어</a>
                 </li>

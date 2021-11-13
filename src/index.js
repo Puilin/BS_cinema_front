@@ -2,12 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Frame from './components/frame';
-import NoticeInfo from './components/index_/noticeinfo';
 import reportWebVitals from './reportWebVitals';
-import Movie_slider from './components/index_/Slider_movieitem';
-//import {  BrowserRouter } from 'react-router-dom';
-import App from './App';
-import Store from './components/Store';
 
 
 
