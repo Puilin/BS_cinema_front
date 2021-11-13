@@ -8,6 +8,8 @@ import Movieinfo from './components/movieinfo';
 import NoticeInfo from './components/noticeinfo';
 import reportWebVitals from './reportWebVitals';
 import Movie_slider from './components/Slider_movieitem';
+import {  BrowserRouter } from 'react-router-dom';
+import Movie from './components/Movie';
 
 ReactDOM.render(
   <React.StrictMode>
@@ -50,6 +52,21 @@ ReactDOM.render(
   </React.StrictMode>,
   document.getElementById('event-info')
 );
+
+// ReactDOM.render(
+//   <React.StrictMode>
+//   <Movie></Movie>
+//   </React.StrictMode>,
+//   document.getElementById('movie')
+// );
+
+ReactDOM.render(
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById('root')
+);
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
