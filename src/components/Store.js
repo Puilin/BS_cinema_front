@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
-import {  Link  } from 'react-router-dom';
-
+//import {  Link  } from 'react-router-dom';
 
 class Store extends Component{
   render() {
@@ -21,27 +20,6 @@ class Store extends Component{
             </div>
           </div>
         </div>
-      </div>
-      <div>
-      <section id="movie">
-        <div class="container">
-            <div class="row">
-                <div class="movie">
-                    <h2 class="ir_so">영화 예매</h2>
-                    <div class="movie_title">
-                        <ul>
-                            <li class="active"><a href="#">박스오피스</a></li>
-                            <li><a href="#">최신개봉작</a></li>
-                            <li><a href="#">상영예정작</a></li>
-                            <li><a href="#">큐레이션</a></li>
-                        </ul>
-                    </div>
-                    </div>
-                    </div>
-                    </div>
-                    </section>
-                    </div>
-      <div>
         </div>
       <div>
       <div class="page-single">

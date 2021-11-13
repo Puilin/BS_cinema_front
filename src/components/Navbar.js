@@ -69,11 +69,11 @@ class Navbar extends Component {
                   </ul>
                 </li>
                 <li class="dropdown first">
-                  <a
-                    class="btn btn-default dropdown-toggle lv1"
-                    data-toggle="dropdown"
-                    data-hover="dropdown"
-                  >
+                <a href="index.html"
+                  onClick={function(e){
+                    e.preventDefault();
+                    this.props.onChangePage("store");
+                  }.bind(this)}>
                     스토어</a>
                 </li>
               </ul>
