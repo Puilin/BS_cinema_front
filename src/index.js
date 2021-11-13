@@ -4,15 +4,12 @@ import './index.css';
 import Frame from './components/frame';
 import reportWebVitals from './reportWebVitals';
 
-
-
 ReactDOM.render(
   <React.StrictMode>
   <Frame></Frame>
   </React.StrictMode>,
   document.getElementById('frame')
 );
-
 
 
 
