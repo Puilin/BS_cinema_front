@@ -18,12 +18,6 @@ ReactDOM.render(
   document.getElementById('frame')
 );
 
-ReactDOM.render(
-  <React.StrictMode>
-  <Store></Store>
-  </React.StrictMode>,
-  document.getElementById('store')
-);
 
 
 

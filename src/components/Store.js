@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-//import {  Link  } from 'react-router-dom';
+// import Tab from './Tab';
 
+//import {  Link  } from 'react-router-dom';
 class Store extends Component{
   render() {
     return(
@@ -20,6 +21,8 @@ class Store extends Component{
             </div>
           </div>
         </div>
+        </div>
+        <div>
         </div>
       <div>
       <div class="page-single">
