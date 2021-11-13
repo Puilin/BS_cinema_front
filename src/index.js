@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import Frame from './components/frame';
-import NoticeInfo from './components/index_/noticeinfo';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
