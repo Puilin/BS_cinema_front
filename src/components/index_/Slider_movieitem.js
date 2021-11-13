@@ -2,7 +2,6 @@ import { Component } from 'react';
 
 class Movie_slider extends Component {
     render() {
-      if (this.props.page === "main") {
         return (
           <div class="slider movie-items">
         <div class="container">
@@ -181,9 +180,6 @@ class Movie_slider extends Component {
         </div>
       </div>
         );
-      } else {
-        return (<div class="slider movie-items"></div>);
-      }
     }
   }
   

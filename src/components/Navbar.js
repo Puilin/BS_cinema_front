@@ -17,6 +17,7 @@ class Navbar extends Component {
                   onClick={function(e){
                     e.preventDefault();
                     this.props.onChangePage("main");
+                    window.location.reload(false);
                   }.bind(this)}>홈</a>
                 </li>
                 <li class="dropdown first">
