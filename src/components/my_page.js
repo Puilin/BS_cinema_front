@@ -1,6 +1,15 @@
 import React, { Component } from 'react';
+import Mp_Content from './mypage_/mp_content';
 
 class MyPage extends Component {
+	constructor(props) {
+		super(props);
+		this.state = {
+			section: "info",
+			mode: "view"
+		}
+	}
+
     render() {
         return (<div>
             <div class="hero user-hero">
@@ -27,98 +36,50 @@ class MyPage extends Component {
 				<div class="user-information">
 					<div class="user-img">
 						<a href="#"><img src="images/uploads/user-img.png" alt=""></img><br></br></a>
-						<a href="#" class="redbtn">Change avatar</a>
+						<a href="#" class="redbtn">프로필 변경</a>
 					</div>
 					<div class="user-fav">
-						<p>Account Details</p>
+						<p>기본 정보</p>
 						<ul>
-							<li  class="active"><a href="userprofile.html">Profile</a></li>
-							<li><a href="userfavoritelist.html">Favorite movies</a></li>
-							<li><a href="userrate.html">Rated movies</a></li>
+							<li><a href="#" onClick={function(e) {
+								e.preventDefault();
+								this.setState({
+									section: "info",
+									mode: "view",
+								})
+							}.bind(this)}>고객 정보</a>
+							</li>
+							<li><a href="userfavoritelist.html">예매 내역</a></li>
+							<li><a href="userrate.html">MY 무비 로그</a></li>
+							<li><a href="userrate.html">리뷰/평점 관리</a></li>
+							<li><a href="userrate.html">1:1 문의</a></li>
 						</ul>
 					</div>
 					<div class="user-fav">
-						<p>Others</p>
+						<p>계정 관리</p>
 						<ul>
-							<li><a href="#">Change password</a></li>
-							<li><a href="#">Log out</a></li>
+							<li><a href="#" onClick={function(e) {
+								e.preventDefault();
+								this.setState({
+									section: "change_pw",
+									mode: "view",
+								})
+							}.bind(this)}>비밀번호 변경</a></li>
+							<li><a href="#">회원탈퇴</a></li>
 						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="col-md-9 col-sm-12 col-xs-12">
-				<div class="form-style-1 user-pro" action="#">
-					<form action="#" class="user">
-						<h4>01. Profile details</h4>
-						<div class="row">
-							<div class="col-md-6 form-it">
-								<label>Username</label>
-								<input type="text" placeholder="edwardkennedy"></input>
-							</div>
-							<div class="col-md-6 form-it">
-								<label>Email Address</label>
-								<input type="text" placeholder="edward@kennedy.com"></input>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 form-it">
-								<label>First Name</label>
-								<input type="text" placeholder="Edward "></input>
-							</div>
-							<div class="col-md-6 form-it">
-								<label>Last Name</label>
-								<input type="text" placeholder="Kennedy"></input>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 form-it">
-								<label>Country</label>
-								<select>
-								  <option value="united">United States</option>
-								  <option value="saab">Others</option>
-								</select>
-							</div>
-							<div class="col-md-6 form-it">
-								<label>State</label>
-								<select>
-								  <option value="united">New York</option>
-								  <option value="saab">Others</option>
-								</select>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-2">
-								<input class="submit" type="submit" value="save"></input>
-							</div>
-						</div>	
-					</form>
-					<form action="#" class="password">
-						<h4>02. Change password</h4>
-						<div class="row">
-							<div class="col-md-6 form-it">
-								<label>Old Password</label>
-								<input type="text" placeholder="**********"></input>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 form-it">
-								<label>New Password</label>
-								<input type="text" placeholder="***************"></input>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-6 form-it">
-								<label>Confirm New Password</label>
-								<input type="text" placeholder="*************** "></input>
-							</div>
-						</div>
-						<div class="row">
-							<div class="col-md-2">
-								<input class="submit" type="submit" value="change"></input>
-							</div>
-						</div>	
-					</form>
-				</div>
+				<Mp_Content
+					section={this.state.section}
+					mode={this.state.mode}
+					onChangeSection={function(code){
+                		this.setState({
+                    		mode: code,
+                		});
+            		}.bind(this)}
+				></Mp_Content>
 			</div>
 		</div>
 	</div>

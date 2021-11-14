@@ -6515,7 +6515,7 @@ ul {
 .user-pro h4 {
   font-family: 'Dosis', sans-serif;
   font-size: 14px;
-  color: #ffffff;
+  color: #9575cd;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 30px;
@@ -7762,10 +7762,10 @@ p.ceb-single {
   color: #020d18;
 }
 .buster-light .user-information ul li a:hover {
-  color: #dd003f;
+  color: #9575cd;
 }
 .buster-light .user-information ul li.active a {
-  color: #dd003f;
+  color: #9575cd;
 }
 .buster-light .userrate {
   border-color: #d0dae4;
@@ -8315,4 +8315,8 @@ progress.membership_exp {
 
 ::-webkit-progress-value {
   background-color: #9575cd;
+}
+
+div.invalid-feedback {
+  color: #dd003f;
 }
