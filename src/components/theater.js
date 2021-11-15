@@ -81,59 +81,45 @@ class Theater extends Component {
 			<div class="col-md-4 col-sm-12 col-xs-12">
 				<div class="sidebar">
 					<div class="searh-form">
-						<h4 class="sb-title">Search for movie</h4>
+						<h4 class="sb-title">상영 정보 검색</h4>
 						<form class="form-style-1" action="#">
 							<div class="row">
 								<div class="col-md-12 form-it">
-									<label>Movie name</label>
-									<input type="text" placeholder="Enter keywords"></input>
+									<label>영화 이름</label>
+									<input type="text" placeholder="영화 이름 입력"></input>
 								</div>
 								<div class="col-md-12 form-it">
-									<label>Genres & Subgenres</label>
+									<label>지역 선택</label>
 									<div class="group-ip">
 										<select
 											name="skills" multiple="" class="ui fluid dropdown">
-											<option value="">Enter to filter genres</option>
-											<option value="Action1">Action 1</option>
-					                        <option value="Action2">Action 2</option>
-					                        <option value="Action3">Action 3</option>
-					                        <option value="Action4">Action 4</option>
-					                        <option value="Action5">Action 5</option>
+											<option value="">--지역을 선택하세요--</option>
+											<option value="seoul">서울</option>
+											<option value="gyeonggi">경기</option>
+											<option value="incheon">인천</option>
+											<option value="gangwon">강원</option>
+											<option value="daegu">대구/충청/세종</option>
+											<option value="busan">부산/대구/경상</option>
+											<option value="gwanju">광주/전라</option>
 										</select>
 									</div>
 									
 								</div>
 								<div class="col-md-12 form-it">
-									<label>Rating Range</label>
+									<label>영화관 선택</label>
 									
 									 <select>
-										<option value="range">-- Select the rating range below --</option>
-										<option value="saab">-- Select the rating range below --</option>
-										<option value="saab">-- Select the rating range below --</option>
-										<option value="saab">-- Select the rating range below --</option>
+									 	<option value="">-- 영화관을 선택하세요 --</option>
+										<option value="range">강남점</option>
+										<option value="saab">이태원점</option>
 									</select>
 									
 								</div>
 								<div class="col-md-12 form-it">
-									<label>Release Year</label>
-									<div class="row">
-										<div class="col-md-6">
-											<select>
-												<option value="range">From</option>
-												<option value="number">10</option>
-												<option value="number">20</option>
-												<option value="number">30</option>
-											</select>
-										</div>
-										<div class="col-md-6">
-											<select>
-												<option value="range">To</option>
-												<option value="number">20</option>
-												<option value="number">30</option>
-												<option value="number">40</option>
-											</select>
-										</div>
-									</div>
+									<label>관람일 선택</label>
+									<form>
+										<p><input id="datefield" type="date"></input></p>
+									</form>
 								</div>
 								<div class="col-md-12 ">
 									<input class="submit" type="submit" value="submit"></input>
