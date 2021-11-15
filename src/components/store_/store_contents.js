@@ -13,10 +13,10 @@ class Store_Content extends Component {
       return (<Snack onChangeDetail={this.props.onChangeDetail}></Snack>);
     }
     else if(this.props.tab === "ticket"){
-      return(<Ticket in_detail={this.props.in_detail}></Ticket>)
+      return(<Ticket onChangeDetail={this.props.onChangeDetail}></Ticket>)
     }
     else if(this.props.tab === "goods"){
-      return(<Goods in_detail={this.props.in_detail}></Goods>)
+      return(<Goods onChangeDetail={this.props.onChangeDetail}></Goods>)
     }
   }
 }

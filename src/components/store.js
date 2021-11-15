@@ -40,6 +40,7 @@ class Store extends Component {
                                         e.preventDefault();
                                         this.setState({
                                             tab: "snack",
+                                            in_detail: false,
                                         });
                                     }.bind(this)}>팝콘/음료</a>
                                 </li>
@@ -48,6 +49,7 @@ class Store extends Component {
                                         e.preventDefault();
                                         this.setState({
                                             tab: "ticket",
+                                            in_detail: false,
                                         });
                                     }.bind(this)}>관람권</a>
                                 </li>
@@ -56,6 +58,7 @@ class Store extends Component {
                                         e.preventDefault();
                                         this.setState({
                                             tab: "goods",
+                                            in_detail: false,
                                         });
                                     }.bind(this)}>굿즈</a>
                                 </li>
