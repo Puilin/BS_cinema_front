@@ -97,7 +97,12 @@ class Navbar extends Component {
                 /></a>
               </ul>
               <ul class="nav navbar-nav flex-child-menu menu-right">
-                <li><a href="#">고객센터</a></li>
+                <li><a href="#"
+                onClick={function(e){
+                          e.preventDefault();
+                          this.props.onChangePage("service");
+                          window.scrollTo(0, 0);
+                    }.bind(this)}>고객센터</a></li>
                 { this.props.is_logined
                 ? <li class="mypagelink">
                   <a 

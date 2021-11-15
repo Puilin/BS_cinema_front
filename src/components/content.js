@@ -4,6 +4,7 @@ import Movie from './movie';
 import Store from './store';
 import Theater from './theater';
 import MyPage from './my_page';
+import Service_Center from './service_center';
 
 class Content extends Component {
     render() {
@@ -17,6 +18,8 @@ class Content extends Component {
         return (<Store></Store>);
       } else if (this.props.page === "mypage") {
         return (<MyPage></MyPage>);
+      } else if (this.props.page === "service") {
+        return (<Service_Center></Service_Center>)
       }
     }
 }
