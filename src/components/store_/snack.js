@@ -43,7 +43,7 @@ class Snack extends Component {
                                                                             e.preventDefault();
                                                                             this
                                                                                 .props
-                                                                                .onChangePage("store_details");
+                                                                                .onChangeDetail();
                                                                         }.bind(this)}>
                                                                         상세정보
                                                                         <i class="ion-android-arrow-dropright"></i>

@@ -14,7 +14,19 @@ class Ticket extends Component {
                                             <div class="flex-wrap-movielist mv-grid-fw">
                                                 <div class="movie-item-style-2 movie-item-style-1">
                                                     <img src="/images/single.png" alt=""/>
-                                                    <div class="hvr-inner"></div>
+                                                    <div class="hvr-inner">
+                                                        <a
+                                                            href="index.html"
+                                                            onClick={function (e) {
+                                                                e.preventDefault();
+                                                                this
+                                                                    .props
+                                                                    .onChangeDetail();
+                                                            }.bind(this)}>
+                                                            상세정보
+                                                            <i class="ion-android-arrow-dropright"></i>
+                                                        </a>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
