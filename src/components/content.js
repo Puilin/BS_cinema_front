@@ -3,6 +3,8 @@ import Main_A from './main_before_login';
 import Movie from './movie';
 import Store from './store';
 import Theater from './theater';
+import MyPage from './my_page';
+import Service_Center from './service_center';
 
 class Content extends Component {
     render() {
@@ -13,10 +15,11 @@ class Content extends Component {
       } else if (this.props.page === "theater") {
         return (<Theater></Theater>);
       } else if (this.props.page === "store") {
-        return (<Store
-            page={this.props.page}
-            onChangePage={this.props.onChangePage}
-          ></Store>);
+        return (<Store></Store>);
+      } else if (this.props.page === "mypage") {
+        return (<MyPage></MyPage>);
+      } else if (this.props.page === "service") {
+        return (<Service_Center></Service_Center>)
       }
     }
 }
