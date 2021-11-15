@@ -132,13 +132,71 @@
   margin-left: -15px;
   margin-right: -15px;
 }
-.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+.col-xs-1,
+.col-sm-1,
+.col-md-1,
+.col-lg-1,
+.col-xs-2,
+.col-sm-2,
+.col-md-2,
+.col-lg-2,
+.col-xs-3,
+.col-sm-3,
+.col-md-3,
+.col-lg-3,
+.col-xs-4,
+.col-sm-4,
+.col-md-4,
+.col-lg-4,
+.col-xs-5,
+.col-sm-5,
+.col-md-5,
+.col-lg-5,
+.col-xs-6,
+.col-sm-6,
+.col-md-6,
+.col-lg-6,
+.col-xs-7,
+.col-sm-7,
+.col-md-7,
+.col-lg-7,
+.col-xs-8,
+.col-sm-8,
+.col-md-8,
+.col-lg-8,
+.col-xs-9,
+.col-sm-9,
+.col-md-9,
+.col-lg-9,
+.col-xs-10,
+.col-sm-10,
+.col-md-10,
+.col-lg-10,
+.col-xs-11,
+.col-sm-11,
+.col-md-11,
+.col-lg-11,
+.col-xs-12,
+.col-sm-12,
+.col-md-12,
+.col-lg-12 {
   position: relative;
   min-height: 1px;
   padding-left: 15px;
   padding-right: 15px;
 }
-.col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
+.col-xs-1,
+.col-xs-2,
+.col-xs-3,
+.col-xs-4,
+.col-xs-5,
+.col-xs-6,
+.col-xs-7,
+.col-xs-8,
+.col-xs-9,
+.col-xs-10,
+.col-xs-11,
+.col-xs-12 {
   float: left;
 }
 .col-xs-12 {
@@ -295,7 +353,18 @@
   margin-left: 0%;
 }
 @media (min-width: 768px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  .col-sm-1,
+  .col-sm-2,
+  .col-sm-3,
+  .col-sm-4,
+  .col-sm-5,
+  .col-sm-6,
+  .col-sm-7,
+  .col-sm-8,
+  .col-sm-9,
+  .col-sm-10,
+  .col-sm-11,
+  .col-sm-12 {
     float: left;
   }
   .col-sm-12 {
@@ -453,7 +522,18 @@
   }
 }
 @media (min-width: 992px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  .col-md-1,
+  .col-md-2,
+  .col-md-3,
+  .col-md-4,
+  .col-md-5,
+  .col-md-6,
+  .col-md-7,
+  .col-md-8,
+  .col-md-9,
+  .col-md-10,
+  .col-md-11,
+  .col-md-12 {
     float: left;
   }
   .col-md-12 {
@@ -611,7 +691,18 @@
   }
 }
 @media (min-width: 1200px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
+  .col-lg-1,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12 {
     float: left;
   }
   .col-lg-12 {
@@ -1095,13 +1186,18 @@ input[type="color"],
   background-color: #fff;
   background-image: none;
   border: 1px solid #aaa;
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s 0.3s ease-out;
-  -moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s 0.3s ease-out;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s 0.3s ease-out;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s 0.3s ease-out;
+  -webkit-transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s;
+  -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+  -webkit-transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s 0.3s ease-out;
+  -moz-transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s 0.3s ease-out;
+  -o-transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s 0.3s ease-out;
+  transition: border-color ease-in-out 0.15s,
+    box-shadow ease-in-out 0.15s 0.3s ease-out;
 }
 select:focus,
 textarea:focus,
@@ -2349,9 +2445,12 @@ tbody.collapse.in {
   padding: 10px 15px;
   border-top: 1px solid transparent;
   border-bottom: 1px solid transparent;
-  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
-  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 1px 0 rgba(255, 255, 255, 0.1);
+  -moz-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 1px 0 rgba(255, 255, 255, 0.1);
   margin-top: 8px;
   margin-bottom: 8px;
 }
@@ -3686,7 +3785,7 @@ button,
 input,
 select,
 textarea {
-  font-family: 'OpenSans', sans-serif;
+  font-family: "OpenSans", sans-serif;
   line-height: 1.5;
 }
 h1,
@@ -3695,7 +3794,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'OpenSans', sans-serif;
+  font-family: "OpenSans", sans-serif;
   font-weight: 700;
   clear: both;
   line-height: 1;
@@ -3727,7 +3826,7 @@ a {
   border-bottom: 1px solid dotted;
 }
 a:hover {
-  color: #F0B5F2;
+  color: #f0b5f2;
 }
 p {
   margin-bottom: 10px;
@@ -3829,7 +3928,7 @@ sup {
   bottom: 1ex;
 }
 sub {
-  top: .5ex;
+  top: 0.5ex;
 }
 small {
   font-size: 75%;
@@ -4012,7 +4111,7 @@ select {
   -webkit-border-radius: 0 !important;
 }
 p {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: 300;
@@ -4025,7 +4124,7 @@ ul {
 }
 /*flex box*/
 .bd-hd {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 36px;
   color: #ffffff;
   font-weight: 700;
@@ -4033,7 +4132,7 @@ ul {
   margin-bottom: 25px;
 }
 .bd-hd span {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 24px;
   color: #4f5b68;
   font-weight: 300;
@@ -4122,7 +4221,7 @@ ul {
   }
 }
 .movie-items .movie-item .title-in h6 a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
@@ -4163,7 +4262,7 @@ ul {
   transition: all 0.5s ease-out;
 }
 .movie-items .movie-item .hvr-inner a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: bold;
@@ -4211,7 +4310,7 @@ ul {
   border-radius: 3px;
 }
 .cate span a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 12px;
   color: #ffffff;
   font-weight: 700;
@@ -4283,7 +4382,7 @@ ul {
   margin-bottom: 10px;
 }
 .movie-item-style-2 .mv-item-infor h6 a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
@@ -4367,7 +4466,7 @@ ul {
   }
 }
 .movie-item-style-1 .hvr-inner a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: bold;
@@ -4545,7 +4644,7 @@ ul {
 }
 .topbar-filter label,
 .topbar-filter select {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: 300;
@@ -4556,7 +4655,7 @@ ul {
   -webkit-appearance: none;
   -moz-appearance: none;
   /* Firefox */
-  background: url('../images/uploads/drop-icon.png') no-repeat right 20px center;
+  background: url("../images/uploads/drop-icon.png") no-repeat right 20px center;
   border-left: 1px solid #405266;
   border-right: 1px solid #405266;
   border-top: none;
@@ -4615,7 +4714,7 @@ ul {
 }
 .topbar-filter .pagination2 span,
 .topbar-filter .pagination2 a {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: 300;
@@ -4656,7 +4755,7 @@ ul {
   margin-bottom: 25px;
 }
 .title-hd h2 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 24px;
   color: #ffffff;
   font-weight: bold;
@@ -4668,7 +4767,7 @@ ul {
   }
 }
 .title-hd a.viewall {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: bold;
@@ -4682,7 +4781,7 @@ ul {
   color: #9575cd;
 }
 .title-hd h3 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 18px;
   color: #ffffff;
   font-weight: bold;
@@ -4701,7 +4800,7 @@ ul {
   margin-top: 30px;
 }
 .title-hd-sm h4 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
@@ -4759,7 +4858,7 @@ ul {
 .tabs ul.tab-links li a,
 .tabs ul.tab-links-2 li a,
 .tabs ul.tab-links-3 li a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: bold;
@@ -4795,6 +4894,7 @@ ul {
 }
 .tabs ul.tabs-mv {
   padding: 20px 0;
+  margin-left: 20px;
   margin-bottom: 30px;
 }
 @media (max-width: 767px) {
@@ -4865,7 +4965,7 @@ ul {
   }
 }
 .trailers .trailer-infor .desc {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
@@ -4873,7 +4973,7 @@ ul {
   margin-bottom: 0;
 }
 .trailers .trailer-infor p {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 12px;
   color: #abb7c4;
   font-weight: 300;
@@ -4929,12 +5029,12 @@ ul {
   height: 100% !important;
 }
 .trailers .videos .thumb-ft .slick-prev::before {
-  content: '\f126';
+  content: "\f126";
   font-family: "Ionicons";
   font-size: 24px;
 }
 .trailers .videos .thumb-ft .slick-next::before {
-  content: '\f123';
+  content: "\f123";
   font-family: "Ionicons";
   font-size: 24px;
 }
@@ -4998,12 +5098,12 @@ ul {
   right: 15px;
 }
 .trailers .video-style-2 .slider-nav .slick-prev::before {
-  content: '\f124';
+  content: "\f124";
   font-family: "Ionicons";
   font-size: 24px;
 }
 .trailers .video-style-2 .slider-nav .slick-next::before {
-  content: '\f125';
+  content: "\f125";
   font-family: "Ionicons";
   font-size: 24px;
 }
@@ -5040,7 +5140,7 @@ ul {
   margin-bottom: 60px;
 }
 .sidebar .sb-title {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 18px;
   color: #ffffff;
   font-weight: bold;
@@ -5062,14 +5162,14 @@ ul {
   border-radius: 3px;
 }
 .sidebar .celebrities .celeb-item .celeb-author h6 a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
   text-transform: none;
 }
 .sidebar .celebrities .celeb-item .celeb-author span {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: bold;
@@ -5080,7 +5180,7 @@ ul {
   color: #9575cd;
 }
 .sidebar .celebrities a.btn {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: bold;
@@ -5093,14 +5193,15 @@ ul {
   color: #9575cd;
 }
 .sidebar .sb-search input {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   color: #abb7c4;
   font-weight: 300;
   text-transform: none;
   border: none;
   height: 40px;
-  background: url('../images/uploads/search-bgsb.png') no-repeat right 20px center;
+  background: url("../images/uploads/search-bgsb.png") no-repeat right 20px
+    center;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
@@ -5110,7 +5211,7 @@ ul {
   margin-bottom: 15px;
 }
 .sidebar .sb-cate ul li a {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: 300;
@@ -5129,7 +5230,7 @@ ul {
   margin-bottom: 15px;
 }
 .sidebar .sb-recentpost .recent-item span {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 48px;
   color: #4f5b68;
   font-weight: 300;
@@ -5140,7 +5241,7 @@ ul {
   width: 70%;
 }
 .sidebar .sb-recentpost .recent-item h6 a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #4280bf;
   font-weight: bold;
@@ -5165,7 +5266,7 @@ ul {
   background-color: #152a3e;
 }
 .sidebar .sb-tags .tag-items a {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: 300;
@@ -5193,7 +5294,7 @@ ul {
   margin-bottom: 60px;
 }
 .time {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   color: #abb7c4;
   font-weight: 300;
@@ -5317,7 +5418,7 @@ ul {
   margin-right: 15px;
 }
 .pagination li a {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: 300;
@@ -5344,7 +5445,7 @@ ul {
   margin-bottom: 15px;
 }
 .blog-it-infor h3 a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 18px;
   color: #4280bf;
   font-weight: bold;
@@ -5386,7 +5487,7 @@ ul {
   font-size: 22px;
 }
 .blog-detail-ct h1 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 36px;
   color: #ffffff;
   font-weight: 700;
@@ -5404,7 +5505,7 @@ ul {
   border-radius: 5px;
 }
 .blog-detail-ct h4 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 18px;
   color: #ffffff;
   font-weight: bold;
@@ -5461,7 +5562,7 @@ ul {
   justify-content: flex-start;
 }
 .blog-detail-ct .share-tag .right-it a {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: 300;
@@ -5472,7 +5573,7 @@ ul {
 }
 .blog-detail-ct .cmt-item {
   background-color: #071829;
-  padding: 0px  25px 25px 25px;
+  padding: 0px 25px 25px 25px;
   margin-top: 30px;
 }
 @media (max-width: 767px) {
@@ -5499,7 +5600,7 @@ ul {
   margin-right: 10px;
 }
 .blog-detail-ct .cmt-item h6 a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
@@ -5531,7 +5632,7 @@ ul {
 }
 .blog-detail-ct .comment-form form input,
 .blog-detail-ct .comment-form form textarea {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   color: #abb7c4;
   font-weight: 300;
@@ -5559,7 +5660,7 @@ ul {
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
@@ -5582,7 +5683,7 @@ ul {
   padding-right: 15px;
 }
 .latestnew .morenew .more-items .more-it h6 a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #4280bf;
   font-weight: bold;
@@ -5624,7 +5725,7 @@ ul {
   padding-top: 170px;
 }
 .hero h1 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 36px;
   color: #ffffff;
   font-weight: 700;
@@ -5640,7 +5741,7 @@ ul {
 .hero ul.breadcumb li,
 .hero ul.breadcumb a {
   display: inline-block;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: 300;
@@ -5652,35 +5753,35 @@ ul {
 }
 .hero:before {
   position: absolute;
-  content: '';
+  content: "";
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.75);
 }
 /*movie single hero*/
 .mv-single-hero {
-  background: url('../images/uploads/hero-bg.jpg') no-repeat;
+  background: url("../images/uploads/hero-bg.jpg") no-repeat;
   height: 598px;
 }
 /*series single hero*/
 .sr-single-hero {
-  background: url('../images/uploads/sr-single.jpg') no-repeat;
+  background: url("../images/uploads/sr-single.jpg") no-repeat;
   height: 598px;
 }
 .hero3 {
-  background: url('../images/uploads/celeb-hero-single.jpg') no-repeat;
+  background: url("../images/uploads/celeb-hero-single.jpg") no-repeat;
   height: 538px;
 }
 .common-hero {
   height: 385px;
-  background: url('../images/uploads/user-hero-bg.jpg') no-repeat;
+  background: url("../images/uploads/user-hero-bg.jpg") no-repeat;
 }
 .common-hero:before {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .user-hero {
   height: 385px;
-  background: url('../images/uploads/user-hero-bg.jpg') no-repeat;
+  background: url("../images/uploads/user-hero-bg.jpg") no-repeat;
 }
 .user-hero .hero-ct {
   padding-top: 225px;
@@ -5712,7 +5813,7 @@ ul {
   background-color: rgba(0, 0, 0, 0.4);
 }
 .landing-hero {
-  background-image: url('../images/uploads/user-hero-bg.jpg');
+  background-image: url("../images/uploads/user-hero-bg.jpg");
   box-shadow: inset 0 0 1000px rgba(0, 0, 0, 0.5);
   text-align: center;
   padding: 110px 0;
@@ -5723,7 +5824,7 @@ ul {
 }
 .landing-hero h2 {
   color: #fff;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 48px;
   line-height: 56px;
 }
@@ -5748,7 +5849,7 @@ ul {
   padding: 145px;
 }
 .landing-version h2 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   margin: 90px 0 15px;
 }
 .landing-version .redbtn {
@@ -5763,7 +5864,7 @@ ul {
   color: #fff;
 }
 .redbtn {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: bold;
@@ -5779,7 +5880,7 @@ ul {
   margin-right: 10px;
 }
 .yellowbtn {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #020d18;
   font-weight: bold;
@@ -5829,7 +5930,7 @@ ul {
   margin-bottom: 15px;
 }
 .user-information ul li a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
@@ -5869,7 +5970,7 @@ ul {
   }
 }
 .social-btn a.parent-btn {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #dd003f;
   font-weight: bold;
@@ -6080,7 +6181,7 @@ ul {
   color: #f5b50a;
 }
 .movie-single .movie-single-ct .tab h3 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 18px;
   color: #abb7c4;
   font-weight: bold;
@@ -6088,7 +6189,7 @@ ul {
   margin-bottom: 15px;
 }
 .movie-single .movie-single-ct .tab h2 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 18px;
   color: #4280bf;
   font-weight: bold;
@@ -6135,7 +6236,12 @@ ul {
   justify-content: flex-start;
   align-items: inherit;
 }
-.movie-single .movie-single-ct .tab.review .mv-user-review-item .user-infor img {
+.movie-single
+  .movie-single-ct
+  .tab.review
+  .mv-user-review-item
+  .user-infor
+  img {
   margin-right: 30px;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
@@ -6210,14 +6316,14 @@ ul {
   margin-top: 15px;
 }
 .movie-single .movie-single-ct .mvsingle-item .vd-infor h6 a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
   text-transform: none;
 }
 .movie-single .movie-single-ct .mvsingle-item .vd-infor p.time {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 12px;
   color: #abb7c4;
   font-weight: 400;
@@ -6265,7 +6371,7 @@ ul {
   justify-content: flex-start;
 }
 .movie-single .movie-single-ct .mvcast-item .cast-it .cast-left h4 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: bold;
@@ -6292,7 +6398,7 @@ ul {
   width: 100%;
 }
 .movie-single .movie-single-ct .mvcast-item .cast-it .series-it a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 18px;
   color: #ffffff;
   font-weight: bold;
@@ -6351,7 +6457,7 @@ ul {
   }
 }
 .movie-single .sb-it h6 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: bold;
@@ -6398,7 +6504,7 @@ ul {
   margin-bottom: 15px;
 }
 .form-style-1 label {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: bold;
@@ -6407,7 +6513,7 @@ ul {
 }
 .form-style-1 input,
 .form-style-1 select {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   color: #abb7c4;
   font-weight: 300;
@@ -6426,7 +6532,7 @@ ul {
   -webkit-appearance: none;
   -moz-appearance: none;
   /* Firefox */
-  background: url('../images/uploads/drop-icon.png') no-repeat right 20px center;
+  background: url("../images/uploads/drop-icon.png") no-repeat right 20px center;
   background-color: #233a50;
 }
 @media (max-width: 991px) {
@@ -6435,7 +6541,7 @@ ul {
   }
 }
 .form-style-1 input.submit {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
@@ -6456,7 +6562,7 @@ ul {
   background-color: #233a50;
 }
 .form-style-1 .group-ip .ui.multiple.dropdown > .text {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   color: #abb7c4;
   font-weight: 300;
@@ -6464,7 +6570,7 @@ ul {
   margin-top: 8px;
 }
 .form-style-1 .group-ip .ui.multiple.dropdown .menu > .item {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   color: #abb7c4;
   font-weight: 300;
@@ -6472,7 +6578,7 @@ ul {
   border-top: 1px solid #405266;
 }
 .form-style-1 .group-ip .ui.multiple.dropdown > .label {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   color: #ffffff;
   font-weight: 300;
@@ -6513,7 +6619,7 @@ ul {
   padding: 30px;
 }
 .user-pro h4 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #9575cd;
   font-weight: bold;
@@ -6557,7 +6663,7 @@ ul {
   margin-top: 15px;
 }
 .userrate h6 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: bold;
@@ -6599,14 +6705,14 @@ ul {
   margin-bottom: 5px;
 }
 .celebrity-items .ceb-item h2 a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 24px;
   color: #ffffff;
   font-weight: 700;
   text-transform: none;
 }
 .celebrity-items .ceb-item span {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: #abb7c4;
   color: #abb7c4;
   font-weight: 300;
@@ -6654,14 +6760,14 @@ ul {
   width: 100%;
 }
 .ceb-item-style-2 h2 a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 18px;
   color: #ffffff;
   font-weight: 700;
   text-transform: none;
 }
 .ceb-item-style-2 span {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   color: #abb7c4;
   font-weight: 300;
@@ -6685,7 +6791,7 @@ p.ceb-single {
   }
 }
 .page-single-2 {
-  background: url('../images/uploads/error-bg.jpg') no-repeat;
+  background: url("../images/uploads/error-bg.jpg") no-repeat;
   background-position: center;
   text-align: center;
   background-size: cover;
@@ -6704,7 +6810,7 @@ p.ceb-single {
   margin-bottom: 145px;
 }
 .middle-content h1 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 60px;
   color: #ffffff;
   font-weight: 400;
@@ -6725,7 +6831,7 @@ p.ceb-single {
   margin-bottom: 250px;
 }
 .left-content h1 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 48px;
   color: #ffffff;
   font-weight: 700;
@@ -6739,7 +6845,7 @@ p.ceb-single {
   margin-top: -115px;
 }
 .left-content h3 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 20px;
   color: #ffffff;
   font-weight: 700;
@@ -6764,7 +6870,7 @@ p.ceb-single {
   }
 }
 .left-content form .email {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   color: #abb7c4;
   font-weight: 300;
@@ -6829,7 +6935,7 @@ p.ceb-single {
   padding-top: 40px;
 }
 .left-content .coming-ct .it-time span {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 60px;
   color: #9575cd;
   font-weight: 500;
@@ -6838,7 +6944,7 @@ p.ceb-single {
   margin-bottom: 10px;
 }
 .left-content .coming-ct .it-time p {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 20px;
   color: #ffffff;
   font-weight: 400;
@@ -6912,7 +7018,7 @@ p.ceb-single {
   }
 }
 .overlay .login-content h3 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 36px;
   color: #222222;
   font-weight: 700;
@@ -6933,7 +7039,7 @@ p.ceb-single {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 25px;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: #abb7c4;
   color: #222222;
   font-weight: 600;
@@ -6956,7 +7062,7 @@ p.ceb-single {
   position: absolute;
 }
 .overlay .login-content label {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #222222;
   font-weight: bold;
@@ -6970,7 +7076,7 @@ p.ceb-single {
   }
 }
 .overlay .login-content label input {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #222222;
   font-weight: bold;
@@ -6980,14 +7086,14 @@ p.ceb-single {
   border: 1px solid #e1e1e1;
 }
 .overlay .login-content label input::-webkit-input-placeholder {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #222222;
   font-weight: bold;
   text-transform: capitalize;
 }
 .overlay .login-content button {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
@@ -7026,7 +7132,7 @@ p.ceb-single {
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 16px;
   color: #ffffff;
   font-weight: 700;
@@ -7047,7 +7153,7 @@ p.ceb-single {
   background-color: #00b9ef;
 }
 .slider {
-  background: url('../images/uploads/slider-bg.jpg') no-repeat;
+  background: url("../images/uploads/slider-bg.jpg") no-repeat;
   background-position: center;
   text-align: center;
   background-size: cover;
@@ -7095,7 +7201,7 @@ p.ceb-single {
   justify-content: flex-end;
 }
 .slider .social-link p {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #ffffff;
   font-weight: bold;
@@ -7132,7 +7238,7 @@ p.ceb-single {
   text-align: right;
 }
 .sliderv2 {
-  background: url('../images/uploads/slider-bg2.jpg') no-repeat;
+  background: url("../images/uploads/slider-bg2.jpg") no-repeat;
   padding-bottom: 0;
   padding-top: 180px;
   overflow: hidden;
@@ -7146,7 +7252,7 @@ p.ceb-single {
   }
 }
 .sliderv2 .movie-item .title-in h1 a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 60px;
   color: #ffffff;
   font-weight: 700;
@@ -7154,7 +7260,7 @@ p.ceb-single {
   line-height: 60px;
 }
 .sliderv2 .movie-item .title-in h1 a span {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 36px;
   color: #abb7c4;
   font-weight: 300;
@@ -7250,12 +7356,12 @@ p.ceb-single {
   }
 }
 .slider-single-item .slick-prev:before {
-  content: '\f124';
+  content: "\f124";
   font-family: "Ionicons";
   font-size: 40px;
 }
 .slider-single-item .slick-next:before {
-  content: '\f125';
+  content: "\f125";
   font-family: "Ionicons";
   font-size: 40px;
 }
@@ -7587,13 +7693,25 @@ p.ceb-single {
 .buster-light .movie-single .movie-single-ct .mvcast-item .cast-it a:hover {
   color: #dd003f;
 }
-.buster-light .movie-single .movie-single-ct .mvcast-item .cast-it .series-it a {
+.buster-light
+  .movie-single
+  .movie-single-ct
+  .mvcast-item
+  .cast-it
+  .series-it
+  a {
   color: #020d18;
 }
 .buster-light .movie-single .movie-single-ct .mvsingle-item .vd-infor h6 a {
   color: #020d18;
 }
-.buster-light .movie-single .movie-single-ct .mvsingle-item .vd-item:hover h6 a {
+.buster-light
+  .movie-single
+  .movie-single-ct
+  .mvsingle-item
+  .vd-item:hover
+  h6
+  a {
   color: #dd003f;
 }
 .buster-light .movie-single .movie-single-ct .tab h3 {
@@ -7845,7 +7963,7 @@ header .navbar-default .navbar-nav {
   list-style: none;
 }
 header .navbar-default .navbar-nav li a {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #9575cd;
   font-weight: bold;
@@ -7871,11 +7989,16 @@ header .navbar-default .navbar-nav li.btn a {
 header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 {
   position: absolute;
   min-width: 180px;
-  padding-top: 20px ;
-  padding-bottom: 20px ;
+  padding-top: 20px;
+  padding-bottom: 20px;
   left: -15px;
 }
-header .navbar-default .navbar-nav .dropdown .dropdown-menu.level1 .dropdown-toggle {
+header
+  .navbar-default
+  .navbar-nav
+  .dropdown
+  .dropdown-menu.level1
+  .dropdown-toggle {
   display: flex;
   justify-content: space-between;
 }
@@ -7893,7 +8016,7 @@ header .navbar-default .navbar-nav .dropdown .dropdown-menu.level2 {
   margin-bottom: 0;
   min-width: 180px;
   left: 177px;
-  padding-top: 20px ;
+  padding-top: 20px;
   padding-bottom: 20px;
   bottom: auto !important;
 }
@@ -7930,7 +8053,7 @@ header .top-search input {
   height: 46px;
   border: none;
   background-color: #7d687e !important;
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: #abb7c4;
   color: #abb7c4;
   font-weight: 300;
@@ -7942,7 +8065,7 @@ header .top-search select {
   -webkit-appearance: none;
   -moz-appearance: none;
   /* Firefox */
-  background: url('../images/uploads/drop-icon.png') no-repeat right 20px center;
+  background: url("../images/uploads/drop-icon.png") no-repeat right 20px center;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -7950,7 +8073,7 @@ header .top-search input::-webkit-input-placeholder {
   color: #abb7c4;
 }
 header .top-search input {
-  background: url('../images/uploads/topsearch.png') no-repeat right 20px center;
+  background: url("../images/uploads/topsearch.png") no-repeat right 20px center;
 }
 header #nav-icon1 {
   width: 15px;
@@ -8113,10 +8236,21 @@ header#headerv3-light {
     color: #abb7c4;
     padding: 10px 15px;
   }
-  header .navbar-default .navbar-nav .dropdown.first.open .dropdown-menu li:hover {
+  header
+    .navbar-default
+    .navbar-nav
+    .dropdown.first.open
+    .dropdown-menu
+    li:hover {
     background-color: #0f2133;
   }
-  header .navbar-default .navbar-nav .dropdown.first.open .dropdown-menu li:hover a {
+  header
+    .navbar-default
+    .navbar-nav
+    .dropdown.first.open
+    .dropdown-menu
+    li:hover
+    a {
     color: #9575cd;
   }
   header .menu-left {
@@ -8136,11 +8270,10 @@ header#headerv3-light {
   header .navbar-default img.logo {
     width: 42%;
     margin-top: 5px;
-    
   }
 }
 footer {
-  background: url('../images/uploads/ft-bg.jpg') no-repeat;
+  background: url("../images/uploads/ft-bg.jpg") no-repeat;
   background-position: center;
   background-size: cover;
 }
@@ -8179,7 +8312,7 @@ footer .flex-parent-ft .flex-child-ft p a {
   font-size: 18px;
 }
 footer .flex-parent-ft .flex-child-ft h4 {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 18px;
   color: #ffffff;
   font-weight: bold;
@@ -8194,7 +8327,7 @@ footer .flex-parent-ft .flex-child-ft ul li {
   margin-bottom: 5px;
 }
 footer .flex-parent-ft .flex-child-ft ul li a {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 14px;
   color: #abb7c4;
   font-weight: regular;
@@ -8204,7 +8337,7 @@ footer .flex-parent-ft .flex-child-ft ul li a:hover {
   color: #9575cd;
 }
 footer .flex-parent-ft .flex-child-ft a.btn {
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-size: 14px;
   color: #dd003f;
   font-weight: bold;
@@ -8214,7 +8347,7 @@ footer .flex-parent-ft .flex-child-ft form {
   margin-bottom: 20px;
 }
 footer .flex-parent-ft .flex-child-ft form input {
-  font-family: 'Nunito', sans-serif;
+  font-family: "Nunito", sans-serif;
   font-size: 12px;
   color: #abb7c4;
   font-weight: 300;
@@ -8224,7 +8357,7 @@ footer .flex-parent-ft .flex-child-ft form input {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-  background: url('../images/uploads/search-bg.png') no-repeat right 20px center;
+  background: url("../images/uploads/search-bg.png") no-repeat right 20px center;
 }
 footer .ft-copyright {
   display: -webkit-flex;
@@ -8283,7 +8416,7 @@ footer.full-width-ft .ft-copyright {
   text-transform: uppercase;
   margin-bottom: 0;
   color: #8c9296;
-  font-family: 'Dosis', sans-serif;
+  font-family: "Dosis", sans-serif;
   font-weight: 700;
 }
 
@@ -8297,7 +8430,8 @@ div.event-table {
   color: #abb7c4;
 }
 
-div.event-table td, div.event-table th {
+div.event-table td,
+div.event-table th {
   border-width: 1px;
   border-color: #abb7c4;
   border-style: solid;
