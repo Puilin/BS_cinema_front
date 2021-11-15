@@ -18,10 +18,9 @@ class Content extends Component {
             page={this.props.page}
             onChangePage={this.props.onChangePage}
           ></Store>);
-      }
-        else if (this.props.page === "store_details"){
+      } else if (this.props.page === "store_details"){
           return (<Store_details></Store_details>);
-        }
+        } 
       }
     }
 
