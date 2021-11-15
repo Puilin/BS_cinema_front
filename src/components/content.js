@@ -3,7 +3,6 @@ import Main_A from './main_before_login';
 import Movie from './movie';
 import Store from './store';
 import Theater from './theater';
-import Store_details from './Store_details';
 
 class Content extends Component {
     render() {
@@ -18,11 +17,9 @@ class Content extends Component {
             page={this.props.page}
             onChangePage={this.props.onChangePage}
           ></Store>);
-      } else if (this.props.page === "store_details"){
-          return (<Store_details></Store_details>);
-        } 
       }
     }
+}
 
 
 export default Content;

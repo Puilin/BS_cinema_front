@@ -6,45 +6,8 @@ class Store_details extends Component {
             <div>
                 <div>
                     <div class="buster-light">
-                        <div class="hero common-hero">
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-md-12">
-                                        <div class="hero-ct">
-                                            <h1 width="100px">스토어</h1>
-                                            <ul class="breadcumb">
-                                                <li class="active">
-                                                    <a href="#">홈</a>
-                                                </li>
-                                                <li>
-                                                    <span class="ion-ios-arrow-right"></span>
-                                                    스토어</li>
-                                                <li>
-                                                    <span class="ion-ios-arrow-right"></span>
-                                                    상세정보</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="movie-tabs">
                             <div class="tabs">
-                                <ul class="tab-links tabs-mv">
-                                    <li class="active">
-                                        <a href="">팝콘/음료</a>
-                                    </li>
-                                    <li>
-                                        <a href="#reviews">
-                                            관람권
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#media">
-                                            굿즈</a>
-                                    </li>
-                                </ul>
                                 <div class="tab-content">
                                     <div id="" class="tab active">
                                         <div class="row">
