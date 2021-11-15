@@ -94,8 +94,19 @@ class Navbar extends Component {
               </ul>
               <ul class="nav navbar-nav flex-child-menu menu-right">
                 <li><a href="#">고객센터</a></li>
-                <li class="loginLink"><a href="#">로그인</a></li>
-                <li class="btn signupLink"><a href="#">회원가입</a></li>
+                { this.props.is_logined
+                ? <li class="mypagelink">
+                  <a 
+                    class="username"
+                    onClick={function(e){
+                        e.preventDefault();
+                        this.props.onChangePage("mypage");
+                        window.scrollTo(0, 0);
+                    }.bind(this)}>이동호 님</a></li>
+                : <li class="loginLink"><a href="">로그인</a></li>}
+                { this.props.is_logined
+                ? <li class="btn signupLink"><a href="#">로그아웃</a></li>
+                : <li class="btn signupLink"><a href="#">회원가입</a></li>}
               </ul>
             </div>
           </nav>

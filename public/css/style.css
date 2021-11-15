@@ -5689,7 +5689,7 @@ ul {
   margin-left: -120px;
 }
 .user-hero ul.breadcumb {
-  text-align: left;
+  text-align: ;
   margin-left: 25.5%;
 }
 @media (max-width: 991px) {
@@ -8304,3 +8304,6 @@ div.event-table td, div.event-table th {
   color: #ffffff;
 }
 
+progress.membership_exp {
+  margin-left: 20px;
+}
