@@ -7750,6 +7750,7 @@ p.ceb-single {
 }
 .buster-light .title-hd-sm h4 {
   color: #020d18;
+  /* margin-right: 100px; */
 }
 .buster-light .title-hd-sm a:hover {
   color: #dd003f;
@@ -8453,4 +8454,9 @@ progress.membership_exp {
 
 div.invalid-feedback {
   color: #dd003f;
+}
+.title-hd-sm span {
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  margin-left: 10px;
 }

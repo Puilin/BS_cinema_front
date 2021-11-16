@@ -57,10 +57,10 @@ class Store extends Component {
                                     <a href="#overview" onClick={function(e){
                                         e.preventDefault();
                                         this.setState({
-                                            tab: "goods",
+                                            tab: "product",
                                             in_detail: false,
                                         });
-                                    }.bind(this)}>굿즈</a>
+                                    }.bind(this)}>상품</a>
                                 </li>
                             </ul>
                             <Store_Content tab={this.state.tab} in_detail={this.state.in_detail} onChangeDetail={function(e){

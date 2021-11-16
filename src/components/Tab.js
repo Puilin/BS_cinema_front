@@ -29,7 +29,7 @@ class Tabs extends Component {
           className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
           onClick={() => toggleTab(3)}
         >
-          굿즈
+          상품
         </button>
       </div>
 

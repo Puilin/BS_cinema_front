@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 
 class Store_details extends Component {
     render() {
+        const imagestyle = {
+            height: "350px",
+            width: "350px",
+        };
         return (
             <div>
                 <div>
@@ -17,7 +21,7 @@ class Store_details extends Component {
                                                     <a
                                                         class="img-lightbox"
                                                         data-fancybox-group="gallery"
-                                                        href="images/uploads/image11.jpg"><img src="/images/single.png" alt=""/></a>
+                                                        href="images/uploads/image11.jpg"><img src="/images/003.png" alt="" style={imagestyle}/></a>
                                                     <a href="#" class="redbtn">구매하기</a>
                                                 </div>
                                                 <div class="title-hd-sm">

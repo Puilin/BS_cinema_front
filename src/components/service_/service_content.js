@@ -4,15 +4,9 @@ import Notice from './notice';
 import Inquiry from './Inquiry';
 import Lent from './lent';
 import Lost from './Lost';
-// import Goods from './goods';
-// import Store_details from './Store_details';
 
 class Service_content extends Component {
   render(){
-    
-    // if (this.props.in_detail) {
-    //   return(<Store_details></Store_details>);
-    // }
     if (this.props.tab === "FAQ") {
       return (<Faq></Faq>);
     }
