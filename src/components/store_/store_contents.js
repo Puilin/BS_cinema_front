@@ -5,12 +5,12 @@ import Product from './product';
 import Store_details from './Store_details';
 
 
+
 class Store_Content extends Component {
   render(){
     if (this.props.in_detail) {
       return(<Store_details></Store_details>);
     }
-
     if (this.props.tab === "snack") {
       return (<Snack onChangeDetail={this.props.onChangeDetail}></Snack>);
     }
