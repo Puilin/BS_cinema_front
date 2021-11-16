@@ -37,6 +37,15 @@ class Theater extends Component {
         });
     };
 
+	countAll = () => {
+		var keys = Object.keys(this.state.data);
+		var sum = 0;
+		for (const k of keys) {
+			sum += this.state.data[k].length;
+		}
+		return sum;
+	};
+
     render() {
         return (
             <div class="buster-light">
@@ -60,7 +69,7 @@ class Theater extends Component {
 		<div class="row ipad-width2">
 			<div class="col-md-8 col-sm-12 col-xs-12">
 				<div class="topbar-filter">
-					<p>전국 상영관 수 <span>325</span> </p>
+					<p>전국 상영관 수 <span>{this.countAll()}</span> </p>
 					<label>분류</label>
 					<select
                         defaultValue="seoul"
