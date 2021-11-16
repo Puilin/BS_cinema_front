@@ -20,7 +20,7 @@ class Faq extends Component {
                                             <CommonTableRow>
                                                 <CommonTableColumn>1</CommonTableColumn>
                                                 <CommonTableColumn>첫번째 게시글입니다.</CommonTableColumn>
-                                                <CommonTableColumn>2020-10-25</CommonTableColumn>
+                                                <CommonTableColumn>2021-11-25</CommonTableColumn>
                                                 <CommonTableColumn>6</CommonTableColumn>
                                             </CommonTableRow>
                                             <CommonTableRow>

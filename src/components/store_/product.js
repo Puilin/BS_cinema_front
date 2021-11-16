@@ -56,7 +56,7 @@ class Product extends Component {
                                                     </h6>
                                                     <span>팝콘(L) 2 + 탄산음료(R) 2 + 관람권 2매</span>
                                                 </div>
-                                                <span>30000원</span>
+                                                <span>23000원</span>
                                             </div>
                                             <div class="movie-item-style-2 movie-item-style-1">
                                                 <img src="/images/008.png" alt=""/>

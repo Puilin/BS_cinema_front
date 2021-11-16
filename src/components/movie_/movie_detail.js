@@ -1,6 +1,14 @@
 import { Component } from 'react';
+import Movie_Content from './movie_content';
 
-class MovieDetail extends Component {
+class Movie_Detail extends Component {
+	constructor(props) {
+        super(props);
+        this.state = {
+            tab : "movie",
+            in_detail : false,
+        }
+    }
     render() {
         return (
             <div class="buster-light">
@@ -11,14 +19,14 @@ class MovieDetail extends Component {
 		<div class="row ipad-width2">
 			<div class="col-md-4 col-sm-12 col-xs-12">
 				<div class="movie-img sticky-sb">
-					<img src="images/uploads/movie-single.jpg" alt=""></img>
+					<img src="/images/movie_image.jpeg" alt=""></img>
 					<div class="movie-btn">	
 						<div class="btn-transform transform-vertical red">
-							<div><a href="#" class="item item-1 redbtn"> <i class="ion-play"></i> Watch Trailer</a></div>
+							<div><a href="#" class="item item-1 redbtn"> <i class="ion-play"></i>예고편보기</a></div>
 							<div><a href="https://www.youtube.com/embed/o-0hcF97wy0" class="item item-2 redbtn fancybox-media hvr-grow"><i class="ion-play"></i></a></div>
 						</div>
 						<div class="btn-transform transform-vertical">
-							<div><a href="#" class="item item-1 yellowbtn"> <i class="ion-card"></i> Buy ticket</a></div>
+							<div><a href="#" class="item item-1 yellowbtn"> <i class="ion-card"></i>예매하기</a></div>
 							<div><a href="#" class="item item-2 yellowbtn"><i class="ion-card"></i></a></div>
 						</div>
 					</div>
@@ -26,11 +34,11 @@ class MovieDetail extends Component {
 			</div>
 			<div class="col-md-8 col-sm-12 col-xs-12">
 				<div class="movie-single-ct main-content">
-					<h1 class="bd-hd">Skyfall: Quantum of Spectre <span>2015</span></h1>
+					<h1 class="bd-hd">이터널스<span>2021</span></h1>
 					<div class="social-btn">
-						<a href="#" class="parent-btn"><i class="ion-heart"></i> Add to Favorite</a>
+						<a href="#" class="parent-btn"><i class="ion-heart"></i>찜하기</a>
 						<div class="hover-bnt">
-							<a href="#" class="parent-btn"><i class="ion-android-share-alt"></i>share</a>
+							<a href="#" class="parent-btn"><i class="ion-android-share-alt"></i>공유하기</a>
 							<div class="hvr-item">
 								<a href="#" class="hvr-grow"><i class="ion-social-facebook"></i></a>
 								<a href="#" class="hvr-grow"><i class="ion-social-twitter"></i></a>
@@ -42,12 +50,12 @@ class MovieDetail extends Component {
 					<div class="movie-rate">
 						<div class="rate">
 							<i class="ion-android-star"></i>
-							<p><span>8.1</span> /10<br></br>
-								<span class="rv">56 Reviews</span>
+							<p><span>6.57</span> /10<br></br>
+								<span class="rv">156 Reviews</span>
 							</p>
 						</div>
 						<div class="rate-star">
-							<p>Rate This Movie:  </p>
+							<p>평점:  </p>
 							<i class="ion-ios-star"></i>
 							<i class="ion-ios-star"></i>
 							<i class="ion-ios-star"></i>
@@ -62,17 +70,49 @@ class MovieDetail extends Component {
 					<div class="movie-tabs">
 						<div class="tabs">
 							<ul class="tab-links tabs-mv">
-								<li class="active"><a href="#overview">Overview</a></li>
-								<li><a href="#reviews"> Reviews</a></li>
-								<li><a href="#cast">  Cast & Crew </a></li>
-								<li><a href="#media"> Media</a></li> 
-								<li><a href="#moviesrelated"> Related Movies</a></li>                        
+								<li class="active">
+									<a href="#overview" onClick={function(e){
+                                        e.preventDefault();
+                                        this.setState({
+                                            tab: "info",
+                                            in_detail: false,
+                                        });
+                                    }.bind(this)}>영화정보</a></li>
+								<li><a href="#reviews" onClick={function(e){
+                                        e.preventDefault();
+                                        this.setState({
+                                            tab: "review",
+                                            in_detail: false,
+                                        });
+                                    }.bind(this)}>관람평</a></li>
+								<li><a href="#cast" onClick={function(e){
+                                        e.preventDefault();
+                                        this.setState({
+                                            tab: "cast",
+                                            in_detail: false,
+                                        });
+                                    }.bind(this)}>출연진</a></li>
+								<li><a href="#media" onClick={function(e){
+                                        e.preventDefault();
+                                        this.setState({
+                                            tab: "pre",
+                                            in_detail: false,
+                                        });
+                                    }.bind(this)}>예고편/스틸컷</a>
+																		</li> 
+								                      
 							</ul>
+							<Movie_Content tab={this.state.tab} in_detail={this.state.in_detail} onChangeDetail={function(e){
+                                var det = this.state.in_detail;
+                                this.setState({
+                                    in_detail : !det
+                                });
+                            }.bind(this)}></Movie_Content>
 						    <div class="tab-content">
 						        <div id="overview" class="tab active">
 						            <div class="row">
 						            	<div class="col-md-8 col-sm-12 col-xs-12">
-						            		<p>Tony Stark creates the Ultron Program to protect the world, but when the peacekeeping program becomes hostile, The Avengers go into action to try and defeat a virtually impossible enemy together. Earth's mightiest heroes must come together once again to protect the world from global extinction.</p>
+						            		<p>마블 스튜디오의 이터널스는 수 천년에 걸쳐 그 모습을 드러내지 않고 살아온 불멸의 히어로들이 &lt;어벤져스: 엔드게임&gt; 이후 인류의 가장 오래된 적 '데비안츠'에 맞서기 위해 다시 힘을 합치면서 벌어지는 이야기</p>
 						            		<div class="title-hd-sm">
 												<h4>Videos & Photos</h4>
 												<a href="#" class="time">All 5 Videos & 245 Photos <i class="ion-ios-arrow-right"></i></a>
@@ -174,46 +214,30 @@ class MovieDetail extends Component {
 						            	</div>
 						            	<div class="col-md-4 col-xs-12 col-sm-12">
 						            		<div class="sb-it">
-						            			<h6>Director: </h6>
-						            			<p><a href="#">Joss Whedon</a></p>
+						            			<h6>감독: </h6>
+						            			<p><a href="#">클로이 자오</a></p>
 						            		</div>
 						            		<div class="sb-it">
-						            			<h6>Writer: </h6>
-						            			<p><a href="#">Joss Whedon,</a> <a href="#">Stan Lee</a></p>
+						            			<h6>각본: </h6>
+						            			<p><a href="#">매튜 K. 퍼포,</a> <a href="#">라이언 피르포</a></p>
 						            		</div>
 						            		<div class="sb-it">
-						            			<h6>Stars: </h6>
-						            			<p><a href="#">Robert Downey Jr,</a> <a href="#">Chris Evans,</a> <a href="#">Mark Ruffalo,</a><a href="#"> Scarlett Johansson</a></p>
+						            			<h6>배우: </h6>
+						            			<p><a href="#">안젤리나 졸리,</a> <a href="#">마동석,</a> <a href="#">리차드 매든,</a><a href="#"> 쿠마일 난지아니</a></p>
+															<a href="#" class="time">더보기<i class="ion-ios-arrow-right"></i></a>
 						            		</div>
 						            		<div class="sb-it">
-						            			<h6>Genres:</h6>
-						            			<p><a href="#">Action, </a> <a href="#"> Sci-Fi,</a> <a href="#">Adventure</a></p>
+						            			<h6>장르:</h6>
+						            			<p><a href="#">액션, </a> <a href="#"> 드라마,</a> <a href="#">판타지</a></p>
 						            		</div>
 						            		<div class="sb-it">
-						            			<h6>Release Date:</h6>
-						            			<p>May 1, 2015 (U.S.A)</p>
+						            			<h6>개봉일:</h6>
+						            			<p>2021년 11월 3일</p>
 						            		</div>
 						            		<div class="sb-it">
-						            			<h6>Run Time:</h6>
-						            			<p>141 min</p>
+						            			<h6>상영시간:</h6>
+						            			<p>155분</p>
 						            		</div>
-						            		<div class="sb-it">
-						            			<h6>MMPA Rating:</h6>
-						            			<p>PG-13</p>
-						            		</div>
-						            		<div class="sb-it">
-						            			<h6>Plot Keywords:</h6>
-						            			<p class="tags">
-						            				<span class="time"><a href="#">superhero</a></span>
-													<span class="time"><a href="#">marvel universe</a></span>
-													<span class="time"><a href="#">comic</a></span>
-													<span class="time"><a href="#">blockbuster</a></span>
-													<span class="time"><a href="#">final battle</a></span>
-						            			</p>
-						            		</div>
-						            		<div class="ads">
-												<img src="images/uploads/ads1.png" alt=""></img>
-											</div>
 						            	</div>
 						            </div>
 						        </div>
@@ -803,4 +827,4 @@ class MovieDetail extends Component {
     }
 }
 
-export default MovieDetail;
+export default Movie_Detail;
