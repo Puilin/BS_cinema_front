@@ -9,7 +9,7 @@ class Pre extends Component {
 						            <div class="row">
 						            	<div class="col-md-8 col-sm-12 col-xs-12">
 						            		<div class="title-hd-sm">
-												<h4>Videos & Photos</h4>
+												<h4>예고편/스틸컷</h4>
 												<a href="#" class="time">All 5 Videos & 245 Photos <i class="ion-ios-arrow-right"></i></a>
 											        </div>
 											<div class="mvsingle-item ov-item">

@@ -8,8 +8,8 @@ class Info extends Component {
 						        <div id="overview" >
 						            <div class="row">
 						            	<div class="col-md-8 col-sm-12 col-xs-12">
-						            		<p>마블 스튜디오의 이터널스는 수 천년에 걸쳐 그 모습을 드러내지 않고 살아온 불멸의 히어로들이 &lt;어벤져스: 엔드게임&gt; 이후 인류의 가장 오래된 적 '데비안츠'에 맞서기 위해 다시 힘을 합치면서 벌어지는 이야기</p>
-						            	</div>
+														<p>마블 스튜디오의 &lt;이터널스&gt;는 수 천년에 걸쳐 그 모습을 드러내지 않고 살아온 불멸의 히어로들이 &lt;어벤져스: 엔드게임&gt; 이후 인류의 가장 오래된 적 '데비안츠'에 맞서기 위해 다시 힘을 합치면서 벌어지는 이야기</p>
+													</div>
 						            	<div class="col-md-4 col-xs-12 col-sm-12">
 						            		<div class="sb-it">
 						            			<h6>감독: </h6>

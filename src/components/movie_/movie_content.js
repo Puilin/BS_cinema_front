@@ -17,10 +17,10 @@ class Movie_Content extends Component {
       return(<Cast onChangeDetail={this.props.onChangeDetail}></Cast>)
     }
     else if(this.props.tab === "review"){
-      return(<Pre onChangeDetail={this.props.onChangeDetail}></Pre>)
+      return(<Review onChangeDetail={this.props.onChangeDetail}></Review>)
     }
     else if(this.props.tab === "pre"){
-      return(<Review onChangeDetail={this.props.onChangeDetail}></Review>)
+      return(<Pre onChangeDetail={this.props.onChangeDetail}></Pre>)
     }
   }
 }
