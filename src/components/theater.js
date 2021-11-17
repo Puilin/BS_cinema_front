@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import TheaterItem from './theater_/theater_item';
 
+
 class Theater extends Component {
     constructor(props) {
         super(props);
         this.state = {
             focus : "seoul",
 			selected_item : "null",
+			page : "list",
             data : {
                 seoul: [
                     {
@@ -30,7 +32,6 @@ class Theater extends Component {
             }    
         }
     }
-
     handleChange = (event) => {
         this.setState({
             focus: event.target.value,
@@ -111,7 +112,20 @@ class Theater extends Component {
 									
 									 <select>
 									 	<option value="">-- 영화관을 선택하세요 --</option>
-										<option value="range">강남점</option>
+										 <li>
+										 <a href="index.html"
+                  onClick={function(e){
+                    e.preventDefault();
+                    this.setState({
+											page: "Calendar"
+										});
+                    window.location.reload(false);
+                    window.scrollTo(0, 0);
+                  }.bind(this)}>
+										<option value="???">강남점</option>
+									</a>
+									</li>
+										 
 										<option value="saab">이태원점</option>
 									</select>
 									
