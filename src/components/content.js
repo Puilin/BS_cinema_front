@@ -1,6 +1,7 @@
 import { Component } from 'react';
 import Main_A from './main_before_login';
 import Movie from './movie';
+import Reserve from './reserve';
 import Store from './store';
 import Theater from './theater';
 import MyPage from './my_page';
@@ -15,6 +16,8 @@ class Content extends Component {
         return (<Movie onChangePage={this.props.onChangePage}></Movie>);
       } else if (this.props.page === "theater") {
         return (<Theater></Theater>);
+      } else if (this.props.page === "reserve") {
+        return (<Reserve></Reserve>);
       } else if (this.props.page === "store") {
         return (<Store></Store>);
       } else if (this.props.page === "mypage") {
@@ -22,7 +25,7 @@ class Content extends Component {
       } else if (this.props.page === "service") {
         return (<Service_Center></Service_Center>);
       } else if (this.props.page === "movie_detail") {
-        return (<MovieDetail></MovieDetail>);
+        return (<MovieDetail></MovieDetail>)
       }
     }
 }
