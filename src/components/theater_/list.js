@@ -2,6 +2,15 @@ import React, { Component } from 'react';
 import TheaterItem from './theater_item';
 
 class List extends Component {
+    countAll = () => {
+		var keys = Object.keys(this.props.data);
+		var sum = 0;
+		for (const k of keys) {
+			sum += this.props.data[k].length;
+		}
+		return sum;
+	};
+
     render() {
         return (
             <div class="page-single movie_list">
@@ -9,7 +18,7 @@ class List extends Component {
 		<div class="row ipad-width2">
 			<div class="col-md-8 col-sm-12 col-xs-12">
 				<div class="topbar-filter">
-					<p>전국 상영관 수 <span></span> </p>
+					<p>전국 상영관 수 <span>{this.countAll()}</span> </p>
 					<label>분류</label>
 					<select
                         defaultValue="seoul"

@@ -38,15 +38,6 @@ class Theater extends Component {
         });
     };
 
-	countAll = () => {
-		var keys = Object.keys(this.state.data);
-		var sum = 0;
-		for (const k of keys) {
-			sum += this.state.data[k].length;
-		}
-		return sum;
-	};
-
     render() {
         return (
             <div class="buster-light">
