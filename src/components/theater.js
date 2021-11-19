@@ -32,30 +32,15 @@ class Theater extends Component {
         }
     }
 
-    handleChange = (event) => {
+    handleChange = (code) => {
         this.setState({
-            focus: event.target.value,
+            page: code,
         });
     };
 
     render() {
         return (
             <div class="buster-light">
-                <div class="hero common-hero">
-	                <div class="container">
-		                <div class="row">
-			                <div class="col-md-12">
-				                <div class="hero-ct">
-					                <h1> 전체 극장</h1>
-					                <ul class="breadcumb">
-						                <li class="active"><a href="index.html">홈</a></li>
-						                <li> <span class="ion-ios-arrow-right"></span> 전체 극장</li>
-					                </ul>
-				                </div>
-			                </div>
-		                </div>
-	                </div>
-                </div>
                 <Theater_Contents page={this.state.page} focus={this.state.focus} data={this.state.data} handleChange={this.handleChange}></Theater_Contents>
 		    </div>
         )

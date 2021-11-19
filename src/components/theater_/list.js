@@ -12,7 +12,22 @@ class List extends Component {
 	};
 
     render() {
-        return (
+        return (<div>
+			<div class="hero common-hero">
+	                <div class="container">
+		                <div class="row">
+			                <div class="col-md-12">
+				                <div class="hero-ct">
+					                <h1> 전체 극장</h1>
+					                <ul class="breadcumb">
+						                <li class="active"><a href="index.html">홈</a></li>
+						                <li> <span class="ion-ios-arrow-right"></span> 전체 극장</li>
+					                </ul>
+				                </div>
+			                </div>
+		                </div>
+	                </div>
+                </div>
             <div class="page-single movie_list">
 	    <div class="container">
 		<div class="row ipad-width2">
@@ -35,7 +50,7 @@ class List extends Component {
 					<a href="movielist_light.html" class="list"><i class="ion-ios-list-outline active"></i></a>
 					<a  href="moviegrid_light.html" class="grid"><i class="ion-grid"></i></a>
 				</div>
-				<TheaterItem data={this.props.data} focus={this.props.focus}></TheaterItem>
+				<TheaterItem data={this.props.data} focus={this.props.focus} handleChange={this.props.handleChange}></TheaterItem>
 			</div>
 			<div class="col-md-4 col-sm-12 col-xs-12">
 				<div class="sidebar">
@@ -91,6 +106,7 @@ class List extends Component {
 		</div>
 	</div>
                 </div>
+				</div>
         );
     }
 }

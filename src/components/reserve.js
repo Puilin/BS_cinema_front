@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import Step1 from './reserve_/step1';
+import Step2 from './reserve_/step2';
 
 class Reserve extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            step : 1,
             data : [
                 {
                     id: 0,
@@ -19,8 +19,16 @@ class Reserve extends Component {
                     id: 2,
                     name: "어바웃타임",
                 }
-            ]
+            ],
+            selected_items : []
         };
+    }
+
+    getItems = (arr) => {
+        var items = arr;
+        this.setState({
+            selected_items : items,
+        });
     }
 
     render() {
@@ -42,7 +50,8 @@ class Reserve extends Component {
                     </div>
                 </div>
 	    
-                <Step1 step={this.state.step} data={this.state.data} />
+                <Step1 data={this.state.data} getItems={this.getItems} selected_items={this.state.selected_items}/>
+                <Step2 selected_items={this.state.selected_items}></Step2>
 	</div>
         );
     }

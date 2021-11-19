@@ -4,11 +4,18 @@ import Reserve_Moviegrid from './reserve_moviegrid';
 class Step1 extends Component {
     constructor(props) {
         super(props);
+        
         this.state = {
             selected_items : [
 
             ],
         }
+    }
+
+    componentDidUpdate(prevProps, prevState) {
+        if (prevProps.selected_items.length !== this.state.selected_items.length
+            && this.state.selected_items.length > 0)
+            this.props.getItems(this.state.selected_items);
     }
 
     addItem = (item) => {
@@ -36,7 +43,7 @@ class Step1 extends Component {
     render() {
         return (
             <div class="container">
-                <div class="col-md-8 col-sm-12 col-xs-12">
+                <div class="col-md-12 col-sm-12 col-xs-12">
                 <br /><br />
                 <h3> Step.1 영화 선택</h3>
                 <br /><br />
@@ -47,7 +54,7 @@ class Step1 extends Component {
                     />
                 </div>
             </div>
-        )
+        );
     }
 }
 
