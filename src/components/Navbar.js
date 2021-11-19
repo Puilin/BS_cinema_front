@@ -40,15 +40,14 @@ class Navbar extends Component {
                     class="btn btn-default dropdown-toggle lv1"
                     data-toggle="dropdown"
                     data-hover="dropdown"
+                    onClick={function(e){
+                          e.preventDefault();
+                          this.props.onChangePage("reserve");
+                          window.scrollTo(0, 0);
+                    }.bind(this)}
                   >
-                    예매 <i class="fa fa-angle-down" aria-hidden="true"></i>
+                    예매
                   </a>
-                  <ul class="dropdown-menu level1">
-                    <li><a href="celebritygrid01.html">빠른예매</a></li>
-                    <li><a href="celebritygrid02.html">상영시간표 </a></li>
-                    <li class="it-last">
-                    </li>
-                  </ul>
                 </li>
                 <li class="dropdown first">
                   <a
@@ -64,7 +63,10 @@ class Navbar extends Component {
                   </a>
                 </li>
                 <li class="dropdown first">
-                <a href="index.html"
+                <a 
+                class="btn btn-default dropdown-toggle lv1"
+                    data-toggle="dropdown"
+                    data-hover="dropdown"
                   onClick={function(e){
                     e.preventDefault();
                     this.props.onChangePage("store");
@@ -93,7 +95,7 @@ class Navbar extends Component {
                 /></a>
               </ul>
               <ul class="nav navbar-nav flex-child-menu menu-right">
-                <li><a href="#"
+                <li><a 
                 onClick={function(e){
                           e.preventDefault();
                           this.props.onChangePage("service");
