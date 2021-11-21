@@ -2,9 +2,33 @@ import { Component } from 'react';
 import Reserve_Moviegrid from './reserve_moviegrid';
 
 class Step2 extends Component {
-    checkAllItemsAreFilled() {
-        // need to implement later
+	constructor(props) {
+		super(props);
+		this.state = {
+			filled : [],
+		}
+	}
+
+    checkAllItemsAreFilled(value) {
+        if (value === "" || value == "null")
+			return false;
+		return true;
     }
+
+	checkLast() {
+		var date = document.getElementById("datefield").value;
+		var arr = this.state.filled;
+		if (date !== "") {
+			arr.push(date);
+			this.setState({
+				filled : arr,
+			})
+		}
+		if (this.state.filled.length > 2) {
+			return true;
+		}
+		alert("모든 항목을 입력해주십시오.");
+	}
 
     render() {
         var items = this.props.selected_items; // arr
@@ -40,7 +64,14 @@ class Step2 extends Component {
 									<label>지역 선택</label>
 									<div class="group-ip">
 										<select
-											name="province" multiple="" class="ui fluid dropdown">
+											name="province" multiple="" class="ui fluid dropdown"
+											onChange={function(e){
+												var arr = this.state.filled;
+												if (this.checkAllItemsAreFilled(e.target.value)) {
+													arr.push(e.target.value)
+													this.setState({filled: arr})
+												}
+											}.bind(this)}>
 											<option value="">--지역을 선택하세요--</option>
 											<option value="seoul">서울</option>
 											<option value="gyeonggi">경기</option>
@@ -56,10 +87,17 @@ class Step2 extends Component {
 								<div class="col-md-12 form-it">
 									<label>영화관 선택</label>
 									
-									 <select>
+									 <select name="theater"
+									 onChange={function(e){
+											var arr = this.state.filled;
+											if (this.checkAllItemsAreFilled(e.target.value)) {
+												arr.push(e.target.value)
+												this.setState({filled: arr})
+											}
+										}.bind(this)}>
 									 	<option value="">-- 영화관을 선택하세요 --</option>
-										<option value="range">강남점</option>
-										<option value="saab">이태원점</option>
+										<option value="gangnam">강남점</option>
+										<option value="itaewon">이태원점</option>
 									</select>
 									
 								</div>
@@ -72,15 +110,15 @@ class Step2 extends Component {
 								<div class="col-md-12 ">
 									<input class="submit" type="submit" value="submit" onClick={function(e){
                                         e.preventDefault();
-                                        this.props.toStep3();
+										if (this.checkLast())
+                                        	this.props.toStep3();
                                     }.bind(this)}></input>
 								</div>
+								<div>좌석 선택 미구현</div>
 							</div>
 						</form>
 					</div>
-                    <button class="refresh_btn">새로고침</button>
                     </div>
-                {arr}
             </div>
         );
     }

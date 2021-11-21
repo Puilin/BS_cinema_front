@@ -1,6 +1,31 @@
 import { Component } from 'react';
 
 class Step3 extends Component {
+    countAll() {
+        var adult_ = document.getElementById("count_A").value;
+        var youth_ = document.getElementById("count_Y").value;
+        var children_ = document.getElementById("count_C").value;
+        var welfare_ = document.getElementById("count_W").value;
+        var arr = []
+        arr.push({
+            adult : adult_,
+            youth : youth_,
+            children : children_,
+            welfare : welfare_,
+        });
+        var temp = Object.values(arr[0]);
+        var sum = 0;
+        for (const i of temp) {
+            sum += i;
+        }
+        if (sum > 0) {
+            this.props.getCount(arr);
+            return true;
+        }
+        alert("인원을 입력해주십시오.");
+        return false;
+    }
+
     render() {
         return (
             <div class="container">
@@ -11,40 +36,39 @@ class Step3 extends Component {
                 <div class="searh-form">						
 						<form class="form-style-1" action="#">
 							<div class="row">
-								<div class="col-md-6 form-it">
-									<label>구분</label>
+								<div class="col-md-3 form-it">
+									<label>성인</label>
 									<div class="group-ip">
-										<select
-											name="province" multiple="" class="ui fluid dropdown">
-											<option value="">--그룹을 선택하세요--</option>
-											<option value="adult">성인</option>
-											<option value="youth">청소년</option>
-											<option value="children">어린이</option>
-                                            <option value="welfare">국가유공자/사회적 약자</option>
-										</select>
+										<input type="number" name="count" id="count_A" min="0" step="1" placeholder="0"></input>
 									</div>
 									
 								</div>
-								<div class="col-md-6 form-it">
-									<label>인원수</label>
-									
-									 <select>
-									 	<option value="">-- 영화관을 선택하세요 --</option>
-										<option value="range">강남점</option>
-										<option value="saab">이태원점</option>
-									</select>
+								<div class="col-md-3 form-it">
+									<label>청소년</label>
+									<div class="group-ip">
+										<input type="number" name="count" id="count_Y" min="0" step="1" placeholder="0"></input>
+									</div>
 									
 								</div>
-								<div class="col-md-12 form-it">
-									<label>관람일 선택</label>
-									<form>
-										<p><input id="datefield" type="date"></input></p>
-									</form>
+                                <div class="col-md-3 form-it">
+									<label>어린이</label>
+									<div class="group-ip">
+										<input type="number" name="count" id="count_C" min="0" step="1" placeholder="0"></input>
+									</div>
+									
+								</div>
+                                <div class="col-md-3 form-it">
+									<label>국가유공자/사회적약자</label>
+									<div class="group-ip">
+										<input type="number" name="count" id="count_W" min="0" step="1" placeholder="0"></input>
+									</div>
+									
 								</div>
 								<div class="col-md-12 ">
 									<input class="submit" type="submit" value="submit" onClick={function(e){
                                         e.preventDefault();
-                                        this.props.toStep3();
+                                        if(this.countAll())
+                                            this.props.toStep4();
                                     }.bind(this)}></input>
 								</div>
 							</div>

@@ -2,12 +2,14 @@ import React, { Component } from 'react';
 import Step1 from './reserve_/step1';
 import Step2 from './reserve_/step2';
 import Step3 from './reserve_/step3';
+import Step4 from './reserve_/step4';
 
 class Reserve extends Component {
     constructor(props) {
         super(props);
         this.state = {
             step3 : false,
+            step4 : false,
             data : [
                 {
                     id: 0,
@@ -22,7 +24,8 @@ class Reserve extends Component {
                     name: "어바웃타임",
                 }
             ],
-            selected_items : []
+            selected_items : [],
+            ticket : [],
         };
     }
 
@@ -58,7 +61,18 @@ class Reserve extends Component {
                         step3: true,
                     })
                 }.bind(this)}></Step2> : <br/>}
-                {this.state.step3 ? <Step3/> : <br/>}
+                {this.state.step3 ? <Step3 getCount={function(arr){
+                    this.setState({
+                        ticket : arr
+                    })
+                }.bind(this)}
+                toStep4={function(){
+                    this.setState({
+                        step4: true,
+                    })
+                }.bind(this)}
+                /> : <br/>}
+                {this.state.step4 ? <Step4 ticket={this.state.ticket}/> : <br/>}
 	</div>
         );
     }

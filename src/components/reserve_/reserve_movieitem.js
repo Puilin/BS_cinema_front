@@ -14,7 +14,7 @@ class Reserve_Movieitem extends Component {
                         addItem={this.props.addItem}
                         removeItem={this.props.removeItem}
                         />
-                    <h6><a href="">{this.props.name}</a></h6>
+                    <h6><a href="#">{this.props.name}</a></h6>
                 </div>
             </div>
         );
