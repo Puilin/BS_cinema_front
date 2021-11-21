@@ -41,6 +41,7 @@ class Theater extends Component {
         this.setState({
             focus : focus_,
         });
+    }
 
     countAll = () => {
         var keys = Object.keys(this.state.data);
@@ -57,27 +58,6 @@ class Theater extends Component {
     render() {
         return (
             <div class="buster-light">
-                <div class="hero common-hero">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <div class="hero-ct">
-                                    <h1>
-                                        전체 극장</h1>
-                                    <ul class="breadcumb">
-                                        <li class="active">
-                                            <a href="index.html">홈</a>
-                                        </li>
-                                        <li>
-                                            <span class="ion-ios-arrow-right"></span>
-                                            전체 극장</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
                 <Theater_Contents
                     page={this.state.page}
                     focus={this.state.focus}
@@ -85,7 +65,7 @@ class Theater extends Component {
                     handleChange={this.handleChange}
                     handleFocus={this.handleFocus}></Theater_Contents>
             </div>
-        )
+        );
     }
 }
 

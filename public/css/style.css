@@ -8504,6 +8504,8 @@ button.refresh_btn::after {
 
 button:hover {
   color: #4280bf;
+}
+
 div.login-wrapper {
   margin: 0 auto;
   margin-top: 50px;

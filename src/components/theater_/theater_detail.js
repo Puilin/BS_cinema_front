@@ -19,7 +19,7 @@ class Theater_detail extends Component {
 		<div class="row ipad-width2">
 			<div class="col-md-4 col-sm-12 col-xs-12">
 				<div class="movie-img sticky-sb">
-					<img src="ex.png" alt=""></img>
+					<img src="images/ex.png" alt=""></img>
 					<div class="movie-btn">	
 					</div>
 				</div>
