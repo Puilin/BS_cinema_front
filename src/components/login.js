@@ -3,11 +3,11 @@ import React, {Component} from 'react';
 class Login extends Component {
 
     render() {
-        const style_input={
-          width: '450px',
-          margin: '20px'
+        const style_input = {
+            width: '450px',
+            margin: '20px'
         }
-        
+
         return (
             <div>
                 <div class="buster-light">
@@ -38,15 +38,9 @@ class Login extends Component {
                                         <h3>로그인</h3>
                                         <br/>
                                         <div>
-                                            <form method="post" 
-                                            class="form-style-1"
-                                            action="#">
-                                                <div 
-                                                
-                                                class="row">
-                                                    <label 
-                                                    style={style_input}
-                                                    for="username-2">
+                                            <form method="post" class="form-style-1" action="#">
+                                                <div class="row">
+                                                    <label style={style_input} for="username-2">
                                                         아이디:
                                                         <input
                                                             type="text"
@@ -57,11 +51,8 @@ class Login extends Component {
                                                             required="required"/>
                                                     </label>
                                                 </div>
-                                                <div 
-                                                class="row">
-                                                    <label 
-                                                    style={style_input}
-                                                    for="password-2">
+                                                <div class="row">
+                                                    <label style={style_input} for="password-2">
                                                         비밀번호:
                                                         <input
                                                             type="password"
@@ -74,9 +65,7 @@ class Login extends Component {
                                                 </div>
                                                 <br/>
                                                 <div class="row">
-                                                    <button 
-                                                    style={style_input}
-                                                    class="redbtn" type="submit">로그인</button>
+                                                    <button style={style_input} class="redbtn" type="submit">로그인</button>
                                                 </div>
                                             </form>
                                         </div>
@@ -86,7 +75,6 @@ class Login extends Component {
                         </div>
                     </div>
                 </div>
-
             </div>
 
         );
