@@ -79,7 +79,7 @@ class Theater_detail extends Component {
 												</div>
 											</div>
 											<div class="schedule">
-												<p>lorem ipsum</p>
+												<p>Movie item goes here</p>
 											</div>
 										</div>
 						            </div>

@@ -17,10 +17,8 @@ class MovieItem_Check extends Component {
                         is_selected: !this.state.is_selected,
                     });
                     if (this.state.is_selected) {
-                        alert(document.getElementById(this.props.id).getAttribute("name") + "해제됨");
                         this.props.removeItem(this.props.id);
                     } else {
-                        alert(document.getElementById(this.props.id).getAttribute("name"));
                         this.props.addItem({id:this.props.id, name:this.props.name});
                     }
                 }.bind(this)}></input>

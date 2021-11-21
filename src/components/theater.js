@@ -38,10 +38,16 @@ class Theater extends Component {
         });
     };
 
+    handleFocus = (focus_) => {
+        this.setState({
+            focus : focus_,
+        });
+    };
+
     render() {
         return (
             <div class="buster-light">
-                <Theater_Contents page={this.state.page} focus={this.state.focus} data={this.state.data} handleChange={this.handleChange}></Theater_Contents>
+                <Theater_Contents page={this.state.page} focus={this.state.focus} data={this.state.data} handleChange={this.handleChange} handleFocus={this.handleFocus}></Theater_Contents>
 		    </div>
         )
     }

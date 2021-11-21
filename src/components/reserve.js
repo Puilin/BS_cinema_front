@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import Step1 from './reserve_/step1';
 import Step2 from './reserve_/step2';
+import Step3 from './reserve_/step3';
 
 class Reserve extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            step3 : false,
             data : [
                 {
                     id: 0,
@@ -22,13 +24,6 @@ class Reserve extends Component {
             ],
             selected_items : []
         };
-    }
-
-    getItems = (arr) => {
-        var items = arr;
-        this.setState({
-            selected_items : items,
-        });
     }
 
     render() {
@@ -50,8 +45,20 @@ class Reserve extends Component {
                     </div>
                 </div>
 	    
-                <Step1 data={this.state.data} getItems={this.getItems} selected_items={this.state.selected_items}/>
-                <Step2 selected_items={this.state.selected_items}></Step2>
+                <Step1 data={this.state.data} getItems={function(arr){
+                    this.setState({
+                        selected_items : arr,
+                    })
+                }.bind(this)}
+                selected_items={this.state.selected_items}
+                />
+                {this.state.selected_items.length > 0 ? <Step2 selected_items={this.state.selected_items}
+                toStep3={function(){
+                    this.setState({
+                        step3: true,
+                    })
+                }.bind(this)}></Step2> : <br/>}
+                {this.state.step3 ? <Step3/> : <br/>}
 	</div>
         );
     }

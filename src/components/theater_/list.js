@@ -37,7 +37,9 @@ class List extends Component {
 					<label>분류</label>
 					<select
                         defaultValue="seoul"
-                        onChange={this.props.handleChange}
+                        onChange={function(e){
+							this.props.handleFocus(e.target.value)
+						}.bind(this)}
                     >
                             <option value="seoul">서울</option>
                             <option value="gyeonggi">경기</option>
