@@ -8474,6 +8474,38 @@ div.invalid-feedback {
   margin-left: 10px;
 }
 
+button.refresh_btn,
+button.refresh_btn::after {
+  -webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+  -o-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+button.refresh_btn {
+  background: none;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  color: #9575cd;
+  display: block;
+  font-size: 18px;
+  
+  position: relative;
+  text-transform: uppercase;
+}
+
+button.refresh_btn::before,
+button.refresh_btn::after {
+  background: #fff;
+  content: '';
+  position: absolute;
+  z-index: -1;
+}
+
+button:hover {
+  color: #4280bf;
+}
+
 div.login-wrapper {
   margin: 0 auto;
   margin-top: 50px;

@@ -2,18 +2,44 @@ import React, { Component } from 'react';
 import TheaterItem from './theater_item';
 
 class List extends Component {
+    countAll = () => {
+		var keys = Object.keys(this.props.data);
+		var sum = 0;
+		for (const k of keys) {
+			sum += this.props.data[k].length;
+		}
+		return sum;
+	};
+
     render() {
-        return (
+        return (<div>
+			<div class="hero common-hero">
+	                <div class="container">
+		                <div class="row">
+			                <div class="col-md-12">
+				                <div class="hero-ct">
+					                <h1> 전체 극장</h1>
+					                <ul class="breadcumb">
+						                <li class="active"><a href="index.html">홈</a></li>
+						                <li> <span class="ion-ios-arrow-right"></span> 전체 극장</li>
+					                </ul>
+				                </div>
+			                </div>
+		                </div>
+	                </div>
+                </div>
             <div class="page-single movie_list">
 	    <div class="container">
 		<div class="row ipad-width2">
 			<div class="col-md-8 col-sm-12 col-xs-12">
 				<div class="topbar-filter">
-					<p>전국 상영관 수 <span></span> </p>
+					<p>전국 상영관 수 <span>{this.countAll()}</span> </p>
 					<label>분류</label>
 					<select
                         defaultValue="seoul"
-                        onChange={this.props.handleChange}
+                        onChange={function(e){
+							this.props.handleFocus(e.target.value)
+						}.bind(this)}
                     >
                             <option value="seoul">서울</option>
                             <option value="gyeonggi">경기</option>
@@ -26,7 +52,7 @@ class List extends Component {
 					<a href="movielist_light.html" class="list"><i class="ion-ios-list-outline active"></i></a>
 					<a  href="moviegrid_light.html" class="grid"><i class="ion-grid"></i></a>
 				</div>
-				<TheaterItem data={this.props.data} focus={this.props.focus}></TheaterItem>
+				<TheaterItem data={this.props.data} focus={this.props.focus} handleChange={this.props.handleChange}></TheaterItem>
 			</div>
 			<div class="col-md-4 col-sm-12 col-xs-12">
 				<div class="sidebar">
@@ -82,6 +108,7 @@ class List extends Component {
 		</div>
 	</div>
                 </div>
+				</div>
         );
     }
 }
