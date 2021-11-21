@@ -1,23 +1,16 @@
 import React, {Component} from 'react';
 
-class Inquiry extends Component {
-
+class Form extends Component {
     render() {
-         const styleform = {
+        const styleform = {
             width: '1300px',
             left: '40px'
         }
         const styleinput = {
             height: '200px'
         }
-        const stylebox = {
-            width: '300px',
-        }
-        const stylebox2 = {
-            width: '400px',
-        }
         const stylebox3 = {
-            width: '370px',
+            width: '500px',
         }
         this.state = {
             menu: '영화관'
@@ -31,7 +24,7 @@ class Inquiry extends Component {
                                 <div class="container">
                                     <div class="row">
                                         <div class="col-md-12 col-sm-12 col-xs-12">
-                                            <h3>1:1문의</h3>
+                                            <h3>분실물문의</h3>
                                         </div>
                                     </div>
                                 </div>
@@ -40,37 +33,47 @@ class Inquiry extends Component {
                     </div>
                 </div>
                 <br/>
-                <div style={styleform} class="col-md-6 col-sm-12 col-xs-12">
+                <div style={styleform} class="col-md-4 col-sm-12 col-xs-12">
                     <div class="sidebar">
                         <div class="searh-form">
                             <form class="form-style-1" action="#">
-                                
                                 <div class="row">
-                                        <div class="col-md-8 form-it">
                                     <div class="col-md-8 form-it">
+                                        <div class="col-md-8 form-it">
                                             <div class="row">
                                                 <div class="col-md-6 form-it">
                                                     <label>이름</label>
                                                     <input type="text" placeholder="이름 입력"></input>
                                                 </div>
-                                                <div 
-                                                class="col-md-6 form-it">
+                                                <div class="col-md-6 form-it">
                                                     <label>이메일</label>
                                                     <input type="text" placeholder="이메일 입력"></input>
                                                 </div>
-                                               <div class="col-md-12 form-it">
+                                                <br/>
+                                                <div class="row"></div>
+                                                <div class="col-md-12 form-it" >
                                                     <label>핸드폰번호</label>
-                                                    <input 
-                                                    type="text" placeholder="핸드폰번호 입력"></input>
+                                                    <input type="text" placeholder="핸드폰번호 입력"></input>
+                                                    <br/>
+                                                    <div 
+                                                    class="row"
+                                                    style={stylebox3}
+                                                    class="col-md-14 form-it">
+                                                        <label>지점 선택</label>
+                                                        <div class="group-ip">
+                                                            <select name="skills" multiple="" class="ui fluid dropdown">
+                                                                <option value="">--지역을 선택하세요.--</option>
+                                                                <option value="서울">서울</option>
+                                                                <option value="경기">경기</option>
+                                                            </select>
+                                                            <select name="skills" multiple="" class="ui fluid dropdown">
+                                                                <option value="">--지점을 선택하세요.--</option>
+                                                                <option value="서울">서울</option>
+                                                                <option value="경기">경기</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                            </div>
-                                            <label>문의 종류</label>
-                                            <div class="group-ip">
-                                                <select name="skills" multiple="" class="ui fluid dropdown">
-                                                    <option value="">--문의 종류를 선택하세요.--</option>
-                                                    <option value="단체관람">단체관람</option>
-                                                    <option value="대관문의">대관문의</option>
-                                                </select>
                                             </div>
                                         </div>
                                     </div>
@@ -90,8 +93,8 @@ class Inquiry extends Component {
                     </div>
                 </div>
             </div>
-        );
+        )
     }
 }
 
-export default Inquiry;
+export default Form;

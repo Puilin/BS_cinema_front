@@ -4,11 +4,12 @@ import Notice from './notice';
 import Inquiry from './Inquiry';
 import Lent from './lent';
 import Lost from './Lost';
+import Form from './form';
 
 class Service_content extends Component {
   render(){
     if (this.props.tab === "FAQ") {
-      return (<Faq></Faq>);
+      return (<Faq onChangeDetail={this.props.onChangeDetail}></Faq>);
     }
     else if(this.props.tab === "Notice"){
       return(<Notice></Notice>)
@@ -20,9 +21,12 @@ class Service_content extends Component {
       return(<Lent></Lent>)
     }
     else if(this.props.tab === "Lost"){
-      return(<Lost></Lost>)
+      return(<Lost onChangeDetail={this.props.onChangeDetail}></Lost>)
     }
-   }
+    else if (this.props.tab === "Lost_form") {
+      return (<Form></Form>)
+    }
+  }
 }
 
 export default Service_content;

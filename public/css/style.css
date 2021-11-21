@@ -5876,6 +5876,19 @@ ul {
   -moz-border-radius: 5px;
   border-radius: 5px;
 }
+.purplebtn {
+  font-family: "Dosis", sans-serif;
+  font-size: 14px;
+  color: #abb7c4;
+  font-weight: bold;
+  text-transform: uppercase;
+  background-color: #9575cd;
+  color: #ffffff;
+  padding: 13px 25px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
 .redbtn i {
   margin-right: 10px;
 }
@@ -8491,4 +8504,8 @@ button.refresh_btn::after {
 
 button:hover {
   color: #4280bf;
+div.login-wrapper {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 500px;
 }
