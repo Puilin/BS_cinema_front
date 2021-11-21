@@ -78,7 +78,11 @@ class Service_center extends Component{
                                     }.bind(this)}>분실물문의</a>
                                 </li>
                             </ul>
-                            <Service_content tab={this.state.tab}></Service_content>
+                            <Service_content tab={this.state.tab} onChangeDetail={function(code){
+                                this.setState({
+                                    tab: code,
+                                })
+                            }.bind(this)}></Service_content>
                         </div>
                     </div>
                 </div>

@@ -8473,3 +8473,9 @@ div.invalid-feedback {
   font-size: 14px;
   margin-left: 10px;
 }
+
+div.login-wrapper {
+  margin: 0 auto;
+  margin-top: 50px;
+  width: 500px;
+}

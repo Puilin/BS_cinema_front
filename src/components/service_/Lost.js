@@ -4,6 +4,13 @@ import CommonTableColumn from './table/CommonTableColoumn';
 import CommonTableRow from './table/CommonTableRow';
 
 class Lost extends Component {
+    constructor(props) {
+    super(props);
+    this.state = {
+        tab : "faq",
+        in_detail : false,
+    }
+}
     render() {
         const styleform = {
             position: 'relative',
@@ -23,7 +30,16 @@ class Lost extends Component {
                                         <div class="col-md-12 col-sm-12 col-xs-12">
                                             <h3>분실물문의</h3>
                                             <div style={styleform}>
-                                                <a href="#" class="redbtn">분실물 문의</a>
+                                                <a href="#" 
+                                                class="redbtn"
+                                                onClick={function (e) {
+                                                            e.preventDefault();
+                                                            this
+                                                                .props
+                                                                .onChangeDetail("Lost_form");
+                                                        }.bind(this)}>
+                                                            분실물 문의
+                                                </a>
                                             </div>
                                         </div>
                                     </div>

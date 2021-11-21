@@ -110,7 +110,12 @@ class Navbar extends Component {
                         this.props.onChangePage("mypage");
                         window.scrollTo(0, 0);
                     }.bind(this)}>이동호 님</a></li>
-                : <li class="loginLink"><a href="">로그인</a></li>}
+                : <li class="loginLink"><a
+                onClick={function(e){
+                          e.preventDefault();
+                          this.props.onChangePage("login");
+                          window.scrollTo(0, 0);
+                    }.bind(this)}>로그인</a></li>}
                 { this.props.is_logined
                 ? <li class="btn signupLink"><a href="#">로그아웃</a></li>
                 : <li class="btn signupLink"><a href="#">회원가입</a></li>}

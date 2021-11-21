@@ -15,7 +15,6 @@ class Faq extends Component {
                                 <div class="row">
                                     <div class="col-md-12 col-sm-12 col-xs-12">
                                         <h3>FAQ</h3>
-
                                         <div> <CommonTable headersName={['구분', '제목', '등록일', '조회수']}>
                                             <CommonTableRow>
                                                 <CommonTableColumn>1</CommonTableColumn>

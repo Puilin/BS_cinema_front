@@ -7,6 +7,7 @@ import Theater from './theater';
 import MyPage from './my_page';
 import Service_Center from './service_center';
 import MovieDetail from './movie_/movie_detail';
+import Login from './login';
 
 class Content extends Component {
     render() {
@@ -26,7 +27,9 @@ class Content extends Component {
         return (<Service_Center></Service_Center>);
       } else if (this.props.page === "movie_detail") {
         return (<MovieDetail></MovieDetail>)
-      }
+      }else if (this.props.page === "login") {
+        return (<Login></Login>)
+       }
     }
 }
 
