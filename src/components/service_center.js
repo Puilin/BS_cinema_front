@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component   } from 'react';
 import Service_content from './service_/service_content';
 
 
