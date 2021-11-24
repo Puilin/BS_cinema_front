@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Navigate } from 'react-router-dom';
 import { fetchLogin } from './auth';
 
 class Admin_login extends Component {
@@ -41,6 +42,13 @@ class Admin_login extends Component {
             //성공하면 해당 user 아이디 패스워드값 셋팅
             //성공하면 해당 url로 이동(main페이지로)
             alert("로그인 성공");
+            <Navigate to={{
+                pathname: "/admin",
+                state: {
+                    is_logined: true,
+                }
+            }}></Navigate>
+            this.props.loginSucess();
           } catch (error) {
       
               //실패하면 throw new Error("") 값 출력

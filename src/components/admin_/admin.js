@@ -2,6 +2,13 @@ import React, { Component } from 'react';
 import Admin_login from './admin_login';
 
 class Admin extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            is_logined : false,
+        };
+    }
+
     render() {
         const style_input={
             width: '450px',
@@ -29,7 +36,11 @@ class Admin extends Component {
                             </div>
                         </div>
                     </div>
-                    <Admin_login></Admin_login>
+                    {!this.state.is_logined ? <Admin_login loginSucess={function(){
+                        this.setState({
+                            is_logined : true,
+                        });
+                    }.bind(this)}></Admin_login> : <div>로그인 성공</div>} 
                 </div>
         );
     }
