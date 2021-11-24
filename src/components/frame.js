@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Navbar from './Navbar';
 import Search from './index_/search_bar';
 import Content from './content';
+import Footer from './footer';
 
 class Frame extends Component {
     constructor(props) {
@@ -35,6 +36,7 @@ class Frame extends Component {
             });
         }.bind(this)}
     ></Content>
+    <Footer></Footer>
     </div>
         );
     }
