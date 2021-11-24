@@ -10,7 +10,7 @@ class Lent extends Component {
             height: '200px'
         }
         const stylebox3 = {
-            width: '500px',
+            width: '500px'
         }
         this.state = {
             menu: '영화관'
@@ -51,14 +51,11 @@ class Lent extends Component {
                                                 </div>
                                                 <br/>
                                                 <div class="row"></div>
-                                                <div class="col-md-12 form-it" >
+                                                <div class="col-md-12 form-it">
                                                     <label>핸드폰번호</label>
                                                     <input type="text" placeholder="핸드폰번호 입력"></input>
                                                     <br/>
-                                                    <div 
-                                                    class="row"
-                                                    style={stylebox3}
-                                                    class="col-md-14 form-it">
+                                                    <div class="col-md-14 form-it" style={stylebox3}>
                                                         <label>지점 선택</label>
                                                         <div class="group-ip">
                                                             <select name="skills" multiple="" class="ui fluid dropdown">

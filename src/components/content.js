@@ -2,7 +2,7 @@ import { Component } from 'react';
 import Main_A from './main_before_login';
 import Movie from './movie';
 import Reserve from './reserve';
-import Store from './store';
+import Store from './store'
 import Theater from './theater';
 import MyPage from './my_page';
 import Service_Center from './service_center';

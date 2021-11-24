@@ -5,7 +5,7 @@ class Inquiry extends Component {
     render() {
          const styleform = {
             width: '1300px',
-            left: '40px'
+            left: '40px',
         }
         const styleinput = {
             height: '200px'

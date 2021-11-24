@@ -11,7 +11,7 @@ class App extends Component {
         <BrowserRouter>
           <Routes>
             <Route exact path="/" element={<Frame/>}></Route>
-            <Route path="/admin" element={<Admin />}></Route>
+            <Route path="/admin" element={<Admin/>}></Route>
           </Routes>
         </BrowserRouter>
       </div>
