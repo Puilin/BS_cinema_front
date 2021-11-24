@@ -1,12 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import Frame from './components/frame';
+import App from './App';
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Frame></Frame>
+  <App></App>
   </React.StrictMode>,
   document.getElementById('frame')
 );
