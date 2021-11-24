@@ -85,7 +85,7 @@ class Navbar extends Component {
                   <span class="sr-only">Toggle navigation</span>
                   <div id="nav-icon1"></div>
                 </div>
-                <a href="index.html"
+                <a href="/"
                   ><img
                     class="logo"
                     src="images/KakaoTalk_20211107_214306088_06.png"
