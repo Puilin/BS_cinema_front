@@ -1,34 +1,16 @@
 import React, { Component } from 'react';
 
-class Admin extends Component {
-    render() {
-        const style_input={
+class Admin_login extends Component {
+    constructor(props) {
+        super(props);
+        this.style_input={
             width: '450px',
             margin: '20px'
         }
-
+    }
+    render() {
         return (
-            <div class="buster-light">
-                    <div class="hero common-hero">
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="hero-ct">
-                                        <h1 width="100px">로그인</h1>
-                                        <ul class="breadcumb">
-                                            <li class="active">
-                                                <a href="#">홈</a>
-                                            </li>
-                                            <li>
-                                                <span class="ion-ios-arrow-right"></span>
-                                                로그인</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="movie-tabs">
+            <div class="movie-tabs">
                         <div class="tabs">
                             <ul class="tab-links tabs-mv">
                                 <div class="login-wrapper" id="signup-content">
@@ -43,7 +25,7 @@ class Admin extends Component {
                                                 
                                                 class="row">
                                                     <label 
-                                                    style={style_input}
+                                                    style={this.style_input}
                                                     for="username-2">
                                                         아이디:
                                                         <input
@@ -58,7 +40,7 @@ class Admin extends Component {
                                                 <div 
                                                 class="row">
                                                     <label 
-                                                    style={style_input}
+                                                    style={this.style_input}
                                                     for="password-2">
                                                         비밀번호:
                                                         <input
@@ -73,7 +55,7 @@ class Admin extends Component {
                                                 <br/>
                                                 <div class="row">
                                                     <button 
-                                                    style={style_input}
+                                                    style={this.style_input}
                                                     class="redbtn" type="submit">로그인</button>
                                                 </div>
                                             </form>
@@ -83,9 +65,8 @@ class Admin extends Component {
                             </ul>
                         </div>
                     </div>
-                </div>
         );
     }
 }
 
-export default Admin;
+export default Admin_login;
