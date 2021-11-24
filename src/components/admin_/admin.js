@@ -87,8 +87,12 @@ class Admin extends Component {
                         </ul>
                         <Admin_content
                             tab={this.state.tab}
-                             
-                            ></Admin_content>
+                              in_detail={this.state.in_detail} onChangeDetail={function(e){
+                                var det = this.state.in_detail;
+                                this.setState({
+                                    in_detail : !det
+                                });
+                            }.bind(this)}></Admin_content>
                     </div>
                 </div>
             </div>

@@ -11,7 +11,7 @@ class Footer extends Component {
       <div class="container">
         <div class="flex-parent-ft">
           <div class="flex-child-ft item1">
-            <a href="index.html"
+            <a href="/"
               ><img
                 width="500"
                 class="logo"
