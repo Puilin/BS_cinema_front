@@ -49,10 +49,28 @@ class MyPage extends Component {
 								})
 							}.bind(this)}>고객 정보</a>
 							</li>
-							<li><a href="userfavoritelist.html">예매 내역</a></li>
+							<li><a href="userfavoritelist.html" onClick={function(e){
+								e.preventDefault();
+								this.setState({
+									section: "reserve_info",
+									mode: "view",
+								})
+							}.bind(this)}>예매 내역</a></li>
 							<li><a href="userrate.html">MY 무비 로그</a></li>
-							<li><a href="userrate.html">리뷰/평점 관리</a></li>
-							<li><a href="userrate.html">1:1 문의</a></li>
+							<li><a href="#" onClick={function(e){
+								e.preventDefault();
+								this.setState({
+									section: "review_info",
+									mode: "view",
+								})
+							}.bind(this)}>리뷰/평점 관리</a></li>
+							<li><a href="userrate.html" onClick={function(e){
+								e.preventDefault();
+								this.setState({
+									section: "1:1",
+									mode: "view",
+								})
+							}.bind(this)}>1:1 문의</a></li>
 						</ul>
 					</div>
 					<div class="user-fav">

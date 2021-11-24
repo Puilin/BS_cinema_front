@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Reserve_select from './reserve_/reserve_select';
 import Step1 from './reserve_/step1';
 import Step2 from './reserve_/step2';
 import Step3 from './reserve_/step3';
@@ -8,6 +9,7 @@ class Reserve extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            step1: false,
             step3 : false,
             step4 : false,
             data : [
@@ -47,14 +49,20 @@ class Reserve extends Component {
                         </div>
                     </div>
                 </div>
+
+                {!this.state.step1 ? <Reserve_select toStep1={function(){
+                    this.setState({
+                        step1: true,
+                    })
+                }.bind(this)}/> : <br/>}
 	    
-                <Step1 data={this.state.data} getItems={function(arr){
+                {this.state.step1 ? <Step1 data={this.state.data} getItems={function(arr){
                     this.setState({
                         selected_items : arr,
                     })
                 }.bind(this)}
                 selected_items={this.state.selected_items}
-                />
+                /> : <div/>}
                 {this.state.selected_items.length > 0 ? <Step2 selected_items={this.state.selected_items}
                 toStep3={function(){
                     this.setState({
