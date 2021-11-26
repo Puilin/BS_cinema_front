@@ -2,6 +2,11 @@ import React, {Component} from 'react';
 
 class Board extends Component {
     render() {
+       const stylebtn={
+        display: 'flex',
+        width: '200px',
+        margin:'10px'
+      }
         return (
           <div>
             <div class="tab-content">
@@ -20,6 +25,10 @@ class Board extends Component {
                         </div>
                     </div>
                 </div>
+            </div>
+            <div style={stylebtn}>
+            <a href="" class="redbtn">이벤트</a>
+            <a href="" class="redbtn">공지사항</a>
             </div>
             </div>
         );
