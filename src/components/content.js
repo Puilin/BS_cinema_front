@@ -18,17 +18,17 @@ class Content extends Component {
       } else if (this.props.page === "theater") {
         return (<Theater></Theater>);
       } else if (this.props.page === "reserve") {
-        return (<Reserve></Reserve>);
+        return (<Reserve is_logined={this.props.is_logined} onChangePage={this.props.onChangePage}></Reserve>);
       } else if (this.props.page === "store") {
         return (<Store></Store>);
       } else if (this.props.page === "mypage") {
-        return (<MyPage></MyPage>);
+        return (<MyPage username={this.props.username}></MyPage>);
       } else if (this.props.page === "service") {
         return (<Service_Center></Service_Center>);
       } else if (this.props.page === "movie_detail") {
         return (<MovieDetail></MovieDetail>)
       }else if (this.props.page === "login") {
-        return (<Login></Login>)
+        return (<Login loginSucess={this.props.loginSucess} onChangePage={this.props.onChangePage}></Login>)
        }
     }
 }
