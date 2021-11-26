@@ -1,12 +1,21 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import Admin_login from './admin_login';
 import Admin_content from './admin_content';
 
 class Admin extends Component {
     constructor(props) {
         super(props);
         this.state = {
+            is_logined : false,
             tab: "sales",
-            in_detail: false
+            in_detail: false,
+        };
+    }
+
+    render() {
+        const style_input={
+            width: '450px',
+            margin: '20px'
         }
     }
     render() {
@@ -21,7 +30,7 @@ class Admin extends Component {
                                         <h1 width="100px">관리자 페이지</h1>
                                         <ul class="breadcumb">
                                             <li class="active">
-                                                <a href="#">홈</a>
+                                                <a href="#">관리자</a>
                                             </li>
                                             <li>
                                                 <span class="ion-ios-arrow-right"></span>
@@ -32,8 +41,12 @@ class Admin extends Component {
                             </div>
                         </div>
                     </div>
-                </div>
-                <div class="movie-tabs">
+                    {!this.state.is_logined ? <Admin_login loginSucess={function(){
+                        this.setState({
+                            is_logined : true,
+                        });
+                    }.bind(this)}></Admin_login> : 
+                    <div class="movie-tabs">
                     <div class="tabs">
                         <ul class="tab-links tabs-mv">
                             <li>
@@ -51,14 +64,6 @@ class Admin extends Component {
                                         e.preventDefault();
                                         this.setState({tab: "pay", in_detail: false});
                                     }.bind(this)}>급여 관리</a>
-                            </li>
-                            <li>
-                                <a
-                                    href="#overview"
-                                    onClick={function (e) {
-                                        e.preventDefault();
-                                        this.setState({tab: "benefit_analysis", in_detail: false});
-                                    }.bind(this)}>수익 분석</a>
                             </li>
                             <li>
                                 <a
@@ -94,6 +99,7 @@ class Admin extends Component {
                                 });
                             }.bind(this)}></Admin_content>
                     </div>
+                </div>} 
                 </div>
             </div>
         );
