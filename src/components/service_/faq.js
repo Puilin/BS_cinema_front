@@ -10,7 +10,7 @@ class Faq extends Component {
 
     render() {
         const styletext={
-            textAlign: 'center'
+            textAlign: 'center',
         }
         const faq = [
             {
@@ -58,12 +58,12 @@ class Faq extends Component {
                                     <TableCell
                                     style={{
                                             width: 50,
-                                            textAlign: "center"
+                                            textAlign: "center",
                                         }}>번호</TableCell>
                                     <TableCell
                                     style={{
                                             width: 700,
-                                            textAlign: "center"
+                                            textAlign: "center",
                                         }}>제목</TableCell>
                                     <TableCell
                                         style={{
@@ -76,7 +76,10 @@ class Faq extends Component {
                             <TableBody>
                                 {
                                     faq.map(c => {
-                                        return <Faq_table key={c.id} id={c.id} name={c.name} date={c.date}/>
+                                        return <Faq_table key={c.id} id={c.id} name={c.name} date={c.date} onChangeDetail={this.props.onChangeDetail} getData={function(){
+                                            this.props.upData(faq);
+                                        }.bind(this)
+                                    }/>
                                     })
                                 }
                             </TableBody>

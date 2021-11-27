@@ -6,8 +6,10 @@ class Service_center extends Component{
     constructor(props) {
         super(props);
         this.state = {
+            faq_id: null,
             tab : "FAQ",
             in_detail : false,
+            data: [],
         };
     }
     render() {
@@ -42,14 +44,16 @@ class Service_center extends Component{
                                         e.preventDefault();
                                         this.setState({
                                             tab: "FAQ",
+                                            in_detail: false,
                                         });
-                                    }.bind(this)}>  FAQ</a>
+                                    }.bind(this)}>FAQ</a>
                                 </li>
                                 <li>
                                     <a href="#overview" onClick={function(e){
                                         e.preventDefault();
                                         this.setState({
                                             tab: "Notice",
+                                            in_detail: false,
                                         });
                                     }.bind(this)}>공지사항</a>
                                 </li>
@@ -58,6 +62,7 @@ class Service_center extends Component{
                                         e.preventDefault();
                                         this.setState({
                                             tab: "Inquiry",
+                                            in_detail: false,
                                         });
                                     }.bind(this)}>1:1문의</a>
                                 </li>
@@ -66,6 +71,7 @@ class Service_center extends Component{
                                         e.preventDefault();
                                         this.setState({
                                             tab: "Lent",
+                                            in_detail: false,
                                         });
                                     }.bind(this)}>단체관람/대관문의</a>
                                 </li>
@@ -74,15 +80,26 @@ class Service_center extends Component{
                                         e.preventDefault();
                                         this.setState({
                                             tab: "Lost",
+                                            in_detail: false,
                                         });
                                     }.bind(this)}>분실물문의</a>
                                 </li>
                             </ul>
-                            <Service_content tab={this.state.tab} onChangeDetail={function(code){
+                            <Service_content tab={this.state.tab} onChangeDetail={function(id){
                                 this.setState({
-                                    tab: code,
+                                    faq_id : id,
+                                    in_detail: true,
                                 })
-                            }.bind(this)}></Service_content>
+                            }.bind(this)}
+                            faq_id={this.state.faq_id}
+                            in_detail={this.state.in_detail}
+                            upData={function(arr){
+                                this.setState({
+                                    data : arr,
+                                })
+                            }.bind(this)}
+                            data={this.state.data}
+                            ></Service_content>
                         </div>
                     </div>
                 </div>
