@@ -24,7 +24,7 @@ class Content extends Component {
       } else if (this.props.page === "mypage") {
         return (<MyPage username={this.props.username}></MyPage>);
       } else if (this.props.page === "service") {
-        return (<Service_Center></Service_Center>);
+        return (<Service_Center is_logined={this.props.is_logined} onChangePage={this.props.onChangePage}></Service_Center>);
       } else if (this.props.page === "movie_detail") {
         return (<MovieDetail></MovieDetail>)
       }else if (this.props.page === "login") {
