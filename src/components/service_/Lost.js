@@ -36,7 +36,7 @@ class Lost extends Component {
                                                             e.preventDefault();
                                                             this
                                                                 .props
-                                                                .onChangeDetail("Lost_form");
+                                                                .onChangeTab("Lost_form");
                                                         }.bind(this)}>
                                                             분실물 문의
                                                 </a>

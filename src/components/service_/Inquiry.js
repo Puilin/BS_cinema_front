@@ -1,6 +1,15 @@
 import React, {Component} from 'react';
 
 class Inquiry extends Component {
+    isAllItemsFilled = () => {
+        const inputFeilds = document.getElementsByTagName("input");
+        for (const item of inputFeilds) {
+            if (item.value === "") {
+                return false;
+            }
+        }
+        return true;
+    }
 
     render() {
          const styleform = {
@@ -22,6 +31,7 @@ class Inquiry extends Component {
         this.state = {
             menu: '영화관'
         }
+
         return (
             <div>
                 <div id="overview" class="tab-content">
@@ -51,7 +61,7 @@ class Inquiry extends Component {
                                             <div class="row">
                                                 <div class="col-md-6 form-it">
                                                     <label>이름</label>
-                                                    <input type="text" placeholder="이름 입력"></input>
+                                                    <input id="name" type="text" placeholder="이름 입력"></input>
                                                 </div>
                                                 <div 
                                                 class="col-md-6 form-it">
@@ -82,7 +92,12 @@ class Inquiry extends Component {
                                         <input style={styleinput} type="text" placeholder="문의 내용을 입력하세요."></input>
                                     </div>
                                     <div class="col-md-12 ">
-                                        <input class="submit" type="submit" value="등록"></input>
+                                        <input class="submit" type="submit" value="등록" onClick={function(e){
+                                            if (!this.isAllItemsFilled()) {
+                                                alert("모든 항목을 입력해주세요")
+                                                return;
+                                            }
+                                        }.bind(this)}></input>
                                     </div>
                                 </div>
                             </form>
