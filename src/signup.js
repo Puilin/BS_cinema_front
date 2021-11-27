@@ -1,54 +1,7 @@
+import { Checkbox } from '@material-ui/core';
 import React, {Component} from 'react';
-import { Navigate } from 'react-router-dom';
-import { fetchLogin } from './auth/auth_user';
 
-class Login extends Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            account: {
-                id: "",
-                password: "",
-            }
-        };
-    }
-
-    onHandleIDChange(value) {
-        this.setState({
-            account: {
-                id : value,
-                password : this.state.account.password,
-            }
-        });
-    }
-
-    onHandlePWChange(value) {
-        this.setState({
-            account: {
-                id : this.state.account.id,
-                password: value,
-            }
-        });
-    }
-
-    onSubmitAccount = async () => {
-        try {
-            const user = await fetchLogin(this.state.account);
-      
-            //성공하면 해당 user 아이디 패스워드값 셋팅
-            //성공하면 해당 url로 이동(main페이지로)
-            alert("로그인 성공");
-            this.props.loginSucess(user.name);
-            this.props.onChangePage("main");
-            window.location.reload(false);
-            window.scrollTo(0, 0);
-          } catch (error) {
-      
-              //실패하면 throw new Error("") 값 출력
-            window.alert(error);
-          }
-    };
-
+class Signup extends Component {
     render() {
         const style_input = {
             width: '450px',
@@ -63,14 +16,14 @@ class Login extends Component {
                             <div class="row">
                                 <div class="col-md-12">
                                     <div class="hero-ct">
-                                        <h1 width="100px">로그인</h1>
+                                        <h1 width="100px">회원가입</h1>
                                         <ul class="breadcumb">
                                             <li class="active">
                                                 <a href="#">홈</a>
                                             </li>
                                             <li>
                                                 <span class="ion-ios-arrow-right"></span>
-                                                로그인</li>
+                                                회원가입</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -82,7 +35,7 @@ class Login extends Component {
                             <ul class="tab-links tabs-mv">
                                 <div class="login-wrapper" id="signup-content">
                                     <div class="login-content">
-                                        <h3>로그인</h3>
+                                        <h3>간편회원가입</h3>
                                         <br/>
                                         <div>
                                             <form method="post" class="form-style-1" action="#">
@@ -99,7 +52,7 @@ class Login extends Component {
                                                             onChange={function(e){
                                                                 this.onHandleIDChange(e.target.value);
                                                             }.bind(this)}
-                                                            />
+                                                            /><div class="redbtn">본인인증</div>
                                                     </label>
                                                 </div>
                                                 <div class="row">
@@ -141,4 +94,4 @@ class Login extends Component {
     }
 }
 
-export default Login;
+export default Signup;
