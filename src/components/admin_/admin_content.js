@@ -2,10 +2,13 @@ import React, { Component } from 'react';
 import Sales from './sales';
 import Pay from './pay';
 import Board from './borad';
-import Movie from './movie';
 import Product from './product';
 import All_chart from './chart_/all_chart';
 import Other_place from './chart_/other_place';
+import Movie from '../admin_/movie'
+
+
+
 
 class Admin_content extends Component {
   render(){
@@ -21,11 +24,11 @@ class Admin_content extends Component {
     else if(this.props.tab === "pay"){
       return(<Pay></Pay>)
     }
-    else if(this.props.tab === "board"){
-      return(<Board></Board>)
-    }
     else if(this.props.tab === "movie"){
       return(<Movie></Movie>)
+    }
+    else if(this.props.tab === "board"){
+      return(<Board></Board>)
     }
     else if(this.props.tab === "product"){
       return(<Product></Product>)

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Chart from './chart';
+import Chart from '../../chart';
 
 class All_chart extends Component{
   render(){
