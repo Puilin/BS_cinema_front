@@ -1,12 +1,27 @@
 import React, {Component} from 'react';
 
 class Inquiry extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            type : "rent",
+        }
+    }
+
     isAllItemsFilled = () => {
         const inputFeilds = document.getElementsByTagName("input");
-        for (const item of inputFeilds) {
-            if (item.value === "") {
+        var i= 4;
+        for (i; i<inputFeilds.length; i++) {
+            if (inputFeilds[i].value === "") {
+                alert("모든 항목을 입력해주세요");
                 return false;
             }
+        }
+        const select = document.getElementById("type");
+        var item = select.options[select.selectedIndex].value
+        if (item === "") {
+            alert("문의 종류를 선택하세요.");
+            return false;
         }
         return true;
     }
@@ -61,7 +76,7 @@ class Inquiry extends Component {
                                             <div class="row">
                                                 <div class="col-md-6 form-it">
                                                     <label>이름</label>
-                                                    <input id="name" type="text" placeholder="이름 입력"></input>
+                                                    <input type="text" placeholder="이름 입력"></input>
                                                 </div>
                                                 <div 
                                                 class="col-md-6 form-it">
@@ -76,10 +91,10 @@ class Inquiry extends Component {
                                             </div>
                                             <label>문의 종류</label>
                                             <div class="group-ip">
-                                                <select name="skills" multiple="" class="ui fluid dropdown">
+                                                <select id="type" name="skills" multiple="" class="ui fluid dropdown">
                                                     <option value="">--문의 종류를 선택하세요.--</option>
-                                                    <option value="단체관람">단체관람</option>
-                                                    <option value="대관문의">대관문의</option>
+                                                    <option value="group">단체관람</option>
+                                                    <option value="rental">대관문의</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -93,10 +108,11 @@ class Inquiry extends Component {
                                     </div>
                                     <div class="col-md-12 ">
                                         <input class="submit" type="submit" value="등록" onClick={function(e){
+                                            e.preventDefault();
                                             if (!this.isAllItemsFilled()) {
-                                                alert("모든 항목을 입력해주세요")
                                                 return;
                                             }
+                                            
                                         }.bind(this)}></input>
                                     </div>
                                 </div>
