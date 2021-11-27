@@ -8,37 +8,29 @@ import TableCell from '@material-ui/core/TableCell';
 
 class Movie extends Component {
     render() {
-        const styleimage={
-            width:'100px',
-            height:'100px'
+        const styleimage = {
+            width: '100px',
+            height: '100px'
         }
         const movie = [
             {
-                    'id': 1,
-                    'image': '/images/5kxrrz7YXuRfySllsNV3pFwar5WP9vhn_420.jpeg',
-                    'name': '듄',
-                    'date': '2021/10/20',
-                    'attendance': '138만명',
-                    'rating': '8.79'
-                }, {
-                    'id': 2,
-                    'image': '/images/movie_image.jpeg',
-                    'name': '이터널스',
-                    'date': '2021/11/03',
-                    'attendance': '291만명',
-                    'rating': '6.49'
-                }, {
-                    'id': 1,
-                    'image': '/images/5kxrrz7YXuRfySllsNV3pFwar5WP9vhn_420.jpeg',
-                    'name': '장르만 로맨스',
-                    'date': '2021/10/20',
-                    'attendance': '138만명',
-                    'rating': '8.79'
-                }
-            ]
-        
+                'id': 1,
+                'image': '/images/5kxrrz7YXuRfySllsNV3pFwar5WP9vhn_420.jpeg',
+                'name': '듄',
+                'date': '2021/10/20'
+            }, {
+                'id': 2,
+                'image': '/images/movie_image.jpeg',
+                'name': '이터널스',
+                'date': '2021/11/03'
+            }, {
+                'id': 1,
+                'image': '/images/5kxrrz7YXuRfySllsNV3pFwar5WP9vhn_420.jpeg',
+                'name': '장르만 로맨스',
+                'date': '2021/10/20'
+            }
+        ]
         return (
-            
             <div>
                 <div class="tab-content">
                     <div id="overview" class="tab active">
@@ -58,43 +50,36 @@ class Movie extends Component {
                 </div>
                 <div>
                     <div>
-                        <br />
-                    <Table>
-                        <TableHead>
-                            <TableRow>
-                                <TableCell>순위</TableCell>
-                                <TableCell
-                                style={styleimage}
-                                >포스터</TableCell>
-                                <TableCell>영화 이름</TableCell>
-                                <TableCell>개봉일</TableCell>
-                                <TableCell>누적관객수</TableCell>
-                                <TableCell>평점</TableCell>
-                            </TableRow>
-                        </TableHead>
-                        <TableBody>
-                            {
-                                movie.map(c => {
-                                    return <Movie_chart
-                                        key={c.id}
-                                        id={c.id}
-                                        image={c.image}
-                                        name={c.name}
-                                        date={c.date}
-                                        attendance={c.attendance}
-                                        rating={c.rating}/>
-                                })
-                            }
-                        </TableBody>
-                    </Table>
+                        <br/>
+                        <Table>
+                            <TableHead>
+                                <TableRow>
+                                    <TableCell>번호</TableCell>
+                                    <TableCell style={styleimage}>포스터</TableCell>
+                                    <TableCell>영화 이름</TableCell>
+                                    <TableCell>상영예정일</TableCell>
+                                </TableRow>
+                            </TableHead>
+                            <TableBody>
+                                {
+                                    movie.map(c => {
+                                        return <Movie_chart 
+                                        key={c.id} 
+                                        id={c.id} 
+                                        image={c.image} 
+                                        name={c.name} 
+                                        date={c.date}/>
+                                    })
+                                }
+                            </TableBody>
+                        </Table>
+                    </div>
                 </div>
+
             </div>
-            
-            </div>
-            
+
         );
     }
 }
-
 
 export default Movie;

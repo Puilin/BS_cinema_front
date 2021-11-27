@@ -8,6 +8,7 @@ import MyPage from './my_page';
 import Service_Center from './service_center';
 import MovieDetail from './movie_/movie_detail';
 import Login from './login';
+import Signup from '../signup';
 
 class Content extends Component {
     render() {
@@ -29,6 +30,8 @@ class Content extends Component {
         return (<MovieDetail></MovieDetail>)
       }else if (this.props.page === "login") {
         return (<Login loginSucess={this.props.loginSucess} onChangePage={this.props.onChangePage}></Login>)
+       }else if (this.props.page === "signup") {
+        return (<Signup></Signup>)
        }
     }
 }

@@ -1,7 +1,4 @@
 import React, { Component } from 'react';
-import CommonTable from '../service_/table/CommonTable';
-import CommonTableRow from '../service_/table/CommonTableRow';
-import CommonTableColumn from '../service_/table/CommonTableColoumn';
 import Inquiry_item from './inquiry_item';
 
 class OnetoOne extends Component {

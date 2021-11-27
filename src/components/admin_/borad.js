@@ -26,11 +26,8 @@ class Board extends Component {
                     </div>
                 </div>
             </div>
-            <div style={stylebtn}>
-            <a href="" class="redbtn">이벤트</a>
-            <a href="" class="redbtn">공지사항</a>
             </div>
-            </div>
+            
         );
     }
 }

@@ -6,8 +6,10 @@ class Service_center extends Component{
     constructor(props) {
         super(props);
         this.state = {
+            faq_id: null,
             tab : "FAQ",
             in_detail : false,
+            data: [],
         };
     }
     render() {
@@ -42,14 +44,16 @@ class Service_center extends Component{
                                         e.preventDefault();
                                         this.setState({
                                             tab: "FAQ",
+                                            in_detail: false,
                                         });
-                                    }.bind(this)}>  FAQ</a>
+                                    }.bind(this)}>FAQ</a>
                                 </li>
                                 <li>
                                     <a href="#overview" onClick={function(e){
                                         e.preventDefault();
                                         this.setState({
                                             tab: "Notice",
+                                            in_detail: false,
                                         });
                                     }.bind(this)}>공지사항</a>
                                 </li>
@@ -63,17 +67,33 @@ class Service_center extends Component{
                                         }
                                         this.setState({
                                             tab: "Inquiry",
+                                            in_detail: false,
                                         });
                                     }.bind(this)}>1:1문의</a>
                                 </li>
                             </ul>
-                            <Service_content tab={this.state.tab} onChangeTab={function(code){
+                            <Service_content tab={this.state.tab} onChangeDetail={function(id){
+                                this.setState({
+                                    faq_id : id,
+                                    in_detail: true,
+                                })
+                            }.bind(this)}
+                            onChangePage={this.props.onChangePage}
+                            onChangeTab={function(code){
                                 this.setState({
                                     tab: code,
                                 })
                             }.bind(this)}
-                            onChangePage={this.props.onChangePage}
-                            inquiry_data={this.props.inquiry_data} addInquiryData={this.props.addInquiryData}></Service_content>
+                            inquiry_data={this.props.inquiry_data} addInquiryData={this.props.addInquiryData}
+                            faq_id={this.state.faq_id}
+                            in_detail={this.state.in_detail}
+                            upData={function(arr){
+                                this.setState({
+                                    data : arr,
+                                })
+                            }.bind(this)}
+                            data={this.state.data}
+                            ></Service_content>
                         </div>
                     </div>
                 </div>

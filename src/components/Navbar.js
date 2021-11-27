@@ -125,7 +125,12 @@ class Navbar extends Component {
                   window.location.reload(false);
                   window.scrollTo(0, 0);
                 }.bind(this)}>로그아웃</a></li>
-                : <li class="btn signupLink"><a href="#">회원가입</a></li>}
+                : <li class="btn signupLink"><a 
+                onClick={function(e){
+                          e.preventDefault();
+                          this.props.onChangePage("signup");
+                          window.scrollTo(0, 0);
+                    }.bind(this)}>회원가입</a></li>}
               </ul>
             </div>
           </nav>
