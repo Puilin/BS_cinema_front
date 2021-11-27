@@ -11,6 +11,7 @@ class Frame extends Component {
             is_logined: false,
             page: "main",
             username: "",
+            inquiry_data: [],
         }
     }
 
@@ -71,6 +72,11 @@ class Frame extends Component {
             this.setLogin(name);
         }.bind(this)}
         username={this.state.username}
+        inquiry_data={this.state.inquiry_data} addInquiryData={function(arr){
+            this.setState({
+                inquiry_data: arr,
+            })
+        }.bind(this)}
     ></Content>
     <Footer></Footer>
     </div>

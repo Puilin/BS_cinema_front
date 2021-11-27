@@ -90,6 +90,7 @@ class MyPage extends Component {
 			</div>
 			<div class="col-md-9 col-sm-12 col-xs-12">
 				<Mp_Content
+					username={this.props.username}
 					section={this.state.section}
 					mode={this.state.mode}
 					onChangeSection={function(code){
@@ -97,6 +98,7 @@ class MyPage extends Component {
                     		mode: code,
                 		});
             		}.bind(this)}
+					inquiry_data={this.props.inquiry_data}
 				></Mp_Content>
 			</div>
 		</div>

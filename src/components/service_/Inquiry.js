@@ -26,6 +26,34 @@ class Inquiry extends Component {
         return true;
     }
 
+    submitData() {
+        var name_ = document.getElementById("name").value;
+        var e_mail_ = document.getElementById("e_mail").value;
+        var hp_ = document.getElementById("hp").value;
+        const select = document.getElementById("type");
+        var type_ = select.options[select.selectedIndex].value;
+        var title_ = document.getElementById("title").value;
+        var content_ = document.getElementById("content").value;
+        var data = this.props.inquiry_data;
+        var today = new Date();
+
+        var year = today.getFullYear();
+        var month = ('0' + (today.getMonth() + 1)).slice(-2);
+        var day = ('0' + today.getDate()).slice(-2);
+
+        var dateString = year + '-' + month  + '-' + day;
+        data.push({
+            name: name_,
+            e_mail: e_mail_,
+            hp: hp_,
+            type: type_,
+            title: title_,
+            content: content_,
+            date: dateString,
+        });
+        this.props.addInquiryData(data);
+    }
+
     render() {
          const styleform = {
             width: '1300px',
@@ -42,9 +70,6 @@ class Inquiry extends Component {
         }
         const stylebox3 = {
             width: '370px',
-        }
-        this.state = {
-            menu: '영화관'
         }
 
         return (
@@ -76,17 +101,17 @@ class Inquiry extends Component {
                                             <div class="row">
                                                 <div class="col-md-6 form-it">
                                                     <label>이름</label>
-                                                    <input type="text" placeholder="이름 입력"></input>
+                                                    <input id="name" type="text" placeholder="이름 입력"></input>
                                                 </div>
                                                 <div 
                                                 class="col-md-6 form-it">
                                                     <label>이메일</label>
-                                                    <input type="text" placeholder="이메일 입력"></input>
+                                                    <input id="e_mail" type="text" placeholder="이메일 입력"></input>
                                                 </div>
                                                <div class="col-md-12 form-it">
                                                     <label>핸드폰번호</label>
                                                     <input 
-                                                    type="text" placeholder="핸드폰번호 입력"></input>
+                                                    id="hp" type="text" placeholder="핸드폰번호 입력"></input>
                                                 </div>
                                             </div>
                                             <label>문의 종류</label>
@@ -95,16 +120,18 @@ class Inquiry extends Component {
                                                     <option value="">--문의 종류를 선택하세요.--</option>
                                                     <option value="group">단체관람</option>
                                                     <option value="rental">대관문의</option>
+                                                    <option value="lost">분실물문의</option>
+                                                    <option value="guitar">기타</option>
                                                 </select>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="col-md-12 form-it">
                                         <label>제목</label>
-                                        <input type="text" placeholder="제목을 입력하세요."></input>
+                                        <input id="title" type="text" placeholder="제목을 입력하세요."></input>
                                         <br/>
                                         <label>문의 내용</label>
-                                        <input style={styleinput} type="text" placeholder="문의 내용을 입력하세요."></input>
+                                        <input id="content" style={styleinput} type="text" placeholder="문의 내용을 입력하세요."></input>
                                     </div>
                                     <div class="col-md-12 ">
                                         <input class="submit" type="submit" value="등록" onClick={function(e){
@@ -112,7 +139,9 @@ class Inquiry extends Component {
                                             if (!this.isAllItemsFilled()) {
                                                 return;
                                             }
-                                            
+                                            this.submitData();
+                                            this.props.onChangeTab("submit_sucess");
+                                            window.scrollTo(0,0);
                                         }.bind(this)}></input>
                                     </div>
                                 </div>

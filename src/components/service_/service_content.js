@@ -2,9 +2,6 @@ import React, {Component} from 'react';
 import Faq from './faq';
 import Notice from './notice';
 import Inquiry from './Inquiry';
-import Lent from './lent';
-import Lost from './Lost';
-import Form from './form';
 import Submit_sucess from './submit_sucess';
 
 class Service_content extends Component {
@@ -16,19 +13,10 @@ class Service_content extends Component {
       return(<Notice></Notice>)
     }
     else if(this.props.tab === "Inquiry"){
-      return(<Inquiry onChangeTab={this.props.onChangeTab}></Inquiry>)
-    }
-    else if(this.props.tab === "Lent"){
-      return(<Lent></Lent>)
-    }
-    else if(this.props.tab === "Lost"){
-      return(<Lost onChangeTab={this.props.onChangeTab}></Lost>)
-    }
-    else if (this.props.tab === "Lost_form") {
-      return (<Form></Form>)
+      return(<Inquiry onChangeTab={this.props.onChangeTab} inquiry_data={this.props.inquiry_data} addInquiryData={this.props.addInquiryData}></Inquiry>)
     }
     else if (this.props.tab === "submit_sucess") {
-      return (<Submit_sucess/>);
+      return (<Submit_sucess onChangePage={this.props.onChangePage}/>);
     }
   }
 }

@@ -22,9 +22,9 @@ class Content extends Component {
       } else if (this.props.page === "store") {
         return (<Store></Store>);
       } else if (this.props.page === "mypage") {
-        return (<MyPage username={this.props.username}></MyPage>);
+        return (<MyPage username={this.props.username} inquiry_data={this.props.inquiry_data}></MyPage>);
       } else if (this.props.page === "service") {
-        return (<Service_Center is_logined={this.props.is_logined} onChangePage={this.props.onChangePage}></Service_Center>);
+        return (<Service_Center is_logined={this.props.is_logined} onChangePage={this.props.onChangePage} inquiry_data={this.props.inquiry_data} addInquiryData={this.props.addInquiryData}></Service_Center>);
       } else if (this.props.page === "movie_detail") {
         return (<MovieDetail></MovieDetail>)
       }else if (this.props.page === "login") {

@@ -66,28 +66,14 @@ class Service_center extends Component{
                                         });
                                     }.bind(this)}>1:1문의</a>
                                 </li>
-                                <li>
-                                    <a href="#overview" onClick={function(e){
-                                        e.preventDefault();
-                                        this.setState({
-                                            tab: "Lent",
-                                        });
-                                    }.bind(this)}>단체관람/대관문의</a>
-                                </li>
-                                <li>
-                                    <a href="#overview" onClick={function(e){
-                                        e.preventDefault();
-                                        this.setState({
-                                            tab: "Lost",
-                                        });
-                                    }.bind(this)}>분실물문의</a>
-                                </li>
                             </ul>
                             <Service_content tab={this.state.tab} onChangeTab={function(code){
                                 this.setState({
                                     tab: code,
                                 })
-                            }.bind(this)}></Service_content>
+                            }.bind(this)}
+                            onChangePage={this.props.onChangePage}
+                            inquiry_data={this.props.inquiry_data} addInquiryData={this.props.addInquiryData}></Service_content>
                         </div>
                     </div>
                 </div>
