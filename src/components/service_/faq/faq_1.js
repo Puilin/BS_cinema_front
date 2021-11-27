@@ -28,8 +28,9 @@ class Faq_1 extends Component {
                         <h4>{this.props.data[Number(this.props.faq_id) - 1].date}</h4>
                     </div>
                     <br/>
-                    <span>밤새시네마의 정식 오픈 날짜는 12월 3일입니다!</span>
-                    <br /><span>많은 애용 부탁드립니다~</span>
+                    <span>{this.props.data[Number(this.props.faq_id) - 1].content}</span>
+                    <br />
+                    <span>{this.props.data[Number(this.props.faq_id) - 1].content2}</span>
 
                 </div>
             </div>
