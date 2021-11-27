@@ -23,9 +23,9 @@ class Faq_1 extends Component {
                 <div class="col-md-8 col-sm-12 col-xs-12">
                     <br/>
                     <div class="title-hd-sm">
-                        <h4>{this.props.data[this.props.faq_id + 1].id}</h4>
-                        <h4>{this.props.data[this.props.faq_id + 1].name}</h4>
-                        <h4>{this.props.data[this.props.faq_id + 1].date}</h4>
+                        <h4>{this.props.data[Number(this.props.faq_id) - 1].id}</h4>
+                        <h4>{this.props.data[Number(this.props.faq_id) - 1].name}</h4>
+                        <h4>{this.props.data[Number(this.props.faq_id) - 1].date}</h4>
                     </div>
                     <br/>
                     <span>밤새시네마의 정식 오픈 날짜는 12월 3일입니다!</span>
