@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import { Navigate } from 'react-router-dom';
 import { fetchLogin } from './auth/auth_user';
 
 class Login extends Component {
