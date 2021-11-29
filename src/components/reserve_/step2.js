@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import Reserve_Moviegrid from './reserve_moviegrid';
+import Select_seat from './select_seat';
 
 class Step2 extends Component {
 	constructor(props) {
@@ -114,7 +114,7 @@ class Step2 extends Component {
                                         	this.props.toStep3();
                                     }.bind(this)}></input>
 								</div>
-								<div>좌석 선택 미구현</div>
+								<Select_seat></Select_seat>
 							</div>
 						</form>
 					</div>
