@@ -6,7 +6,6 @@ class Store extends Component {
         super(props);
         this.state = {
             tab : "snack",
-            in_detail : false,
         }
     }
     render() {
@@ -63,11 +62,10 @@ class Store extends Component {
                                     }.bind(this)}>상품</a>
                                 </li>
                             </ul>
-                            <Store_Content tab={this.state.tab} in_detail={this.state.in_detail} onChangeDetail={function(e){
-                                var det = this.state.in_detail;
+                            <Store_Content tab={this.state.tab} onChangeTab={function(code){
                                 this.setState({
-                                    in_detail : !det
-                                });
+                                    tab: code,
+                                })
                             }.bind(this)}></Store_Content>
                         </div>
                     </div>

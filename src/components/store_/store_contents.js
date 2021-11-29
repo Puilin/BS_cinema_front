@@ -7,14 +7,14 @@ import Double from './double';
 
 class Store_Content extends Component {
   render(){
-    if (this.props.in_detail) {
+    if (this.props.tab === "single") {
       return(<Single></Single>);
     }
-    else if (this.props.in_detail) {
+    else if (this.props.tab === "double") {
       return(<Double></Double>);
     }
     else if (this.props.tab === "snack") {
-      return (<Snack onChangeDetail={this.props.onChangeDetail}></Snack>);
+      return (<Snack onChangeTab={this.props.onChangeTab}></Snack>);
     }
     else if(this.props.tab === "ticket"){
       return(<Ticket onChangeDetail={this.props.onChangeDetail}></Ticket>)

@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import Single from './single';
 
 class Snack extends Component {
     render() {
@@ -21,9 +20,9 @@ class Snack extends Component {
                                                                 e.preventDefault();
                                                                 this
                                                                     .props
-                                                                    .onChangeDetail();
+                                                                    .onChangeTab("single");
                                                             }.bind(this)}>
-                                                            상세정보
+                                                            구매하기
                                                             <i class="ion-android-arrow-dropright"></i>
                                                         </a>
                                                     </div>
@@ -43,9 +42,9 @@ class Snack extends Component {
                                                                 e.preventDefault();
                                                                 this
                                                                     .props
-                                                                    .onChangeDetail();
+                                                                    .onChangeTab("double");
                                                             }.bind(this)}>
-                                                            상세정보
+                                                            구매하기
                                                             <i class="ion-android-arrow-dropright"></i>
                                                         </a>
                                                     </div>
