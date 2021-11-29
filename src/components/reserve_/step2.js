@@ -6,6 +6,7 @@ class Step2 extends Component {
 		super(props);
 		this.state = {
 			filled : [],
+			theater_selected: false,
 		}
 	}
 
@@ -111,11 +112,14 @@ class Step2 extends Component {
 									<input class="submit" type="submit" value="submit" onClick={function(e){
                                         e.preventDefault();
 										if (this.checkLast())
-                                        	this.props.toStep3();
+                                        	this.setState({
+												theater_selected: true,
+											})
                                     }.bind(this)}></input>
 								</div>
-								<div class='seats'>
-								<Select_seat></Select_seat>
+								<div class='col-md-12'>
+								<br/>
+								{this.state.theater_selected ? <Select_seat toStep3={this.props.toStep3} getSelected={this.props.getSelected}></Select_seat> : <div/> }
 								</div>
 							</div>
 						</form>

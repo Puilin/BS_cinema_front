@@ -17,7 +17,7 @@ class Seat_item extends Component {
                 e.target.style.backgroundColor = "#cad6e3";
                 this.sendData();
             }.bind(this)}
-            class="seat_item" style={{textAlign: "center", padding:15,}}>{this.props.seat_no}</td>
+            id={this.props.seat_no} style={{textAlign: "center", padding:15,}}>{this.props.seat_no}</td>
         );
     }
 }
