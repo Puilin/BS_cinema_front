@@ -1,5 +1,5 @@
 import { Component } from 'react';
-import Select_seat from './select_seat';
+import Select_seat from './seat/select_seat';
 
 class Step2 extends Component {
 	constructor(props) {
@@ -114,7 +114,9 @@ class Step2 extends Component {
                                         	this.props.toStep3();
                                     }.bind(this)}></input>
 								</div>
+								<div class='seats'>
 								<Select_seat></Select_seat>
+								</div>
 							</div>
 						</form>
 					</div>
