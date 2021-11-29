@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-class Store_details extends Component {
+class Single extends Component {
     render() {
         const imagestyle = {
             height: "350px",
@@ -23,6 +23,10 @@ class Store_details extends Component {
                                                         data-fancybox-group="gallery"
                                                         href="images/uploads/image11.jpg"><img src="/images/003.png" alt="" style={imagestyle}/></a>
                                                     <a href="#" class="redbtn">구매하기</a>
+                                                </div>
+                                                <div class="title-hd-sm">
+                                                    <h4>금액</h4>
+                                                    <p>9000원</p>
                                                 </div>
                                                 <div class="title-hd-sm">
                                                     <h4>사용기간</h4>
@@ -49,4 +53,4 @@ class Store_details extends Component {
     }
 }
 
-export default Store_details;
+export default Single;
