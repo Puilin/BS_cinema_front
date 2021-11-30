@@ -18,6 +18,7 @@ class Footer extends Component {
                 src="images/KakaoTalk_20211107_214306088_06.png"
                 alt=""
             /></a>
+          
             <p>
               경기도 안산시 상록구<br />
               한양대학로 55
