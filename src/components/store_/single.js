@@ -9,17 +9,12 @@ class Single extends Component {
             checkedInputs: [],
             number: 0,       
         }
-        
-
-
     }
-
     onIncrease() {
         this.setState({
             number : this.state.number + 1,
         });
     }
-
     onDecrease() {
         if (this.state.number == 0)
             return;
@@ -27,13 +22,11 @@ class Single extends Component {
             number: this.state.number - 1,
         });
     }
-
     setCheckedInputs(arr) {
         this.setState({
             checkedInputs: arr,
         })
     }
-
     changeHandler = (checked, id) => {
         if (checked) {
             this.setCheckedInputs([
