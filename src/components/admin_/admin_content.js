@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import Sales from './sales';
-import Pay from './pay';
+import Employee from './employee';
 import Board from './borad';
 import Product from './product';
 import All_chart from './chart_/all_chart';
 import Other_place from './chart_/other_place';
 import Movie from '../admin_/movie'
+import Commuting from './commuting';
+import Payment from './payment';
 
 
 
@@ -21,8 +23,14 @@ class Admin_content extends Component {
     else if (this.props.tab === "other_place") {
       return (<Other_place onChangeDetail={this.props.onChangeDetail}></Other_place>);
     }
-    else if(this.props.tab === "pay"){
-      return(<Pay></Pay>)
+    else if (this.props.tab === "commuting") {
+      return (<Commuting onChangeDetail={this.props.onChangeDetail}></Commuting>);
+    }
+    else if (this.props.tab === "payment") {
+      return (<Payment onChangeDetail={this.props.onChangeDetail}></Payment>);
+    }
+    else if(this.props.tab === "employee"){
+      return(<Employee></Employee>)
     }
     else if(this.props.tab === "movie"){
       return(<Movie></Movie>)

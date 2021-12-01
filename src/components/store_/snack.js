@@ -42,7 +42,7 @@ class Snack extends Component {
                                                                 e.preventDefault();
                                                                 this
                                                                     .props
-                                                                    .onChangeTab("double");
+                                                                    .onChangeTab("single");
                                                             }.bind(this)}>
                                                             구매하기
                                                             <i class="ion-android-arrow-dropright"></i>

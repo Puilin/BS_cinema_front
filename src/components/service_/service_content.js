@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Faq from './faq';
-import Notice from './notice';
 import Inquiry from './Inquiry';
 import Submit_sucess from './submit_sucess';
 import Faq_1 from './faq/faq_1';
@@ -12,9 +11,6 @@ class Service_content extends Component {
     }
     else if (this.props.tab === "FAQ") {
       return (<Faq onChangeDetail={this.props.onChangeDetail} upData={this.props.upData}></Faq>);
-    }
-    else if(this.props.tab === "Notice"){
-      return(<Notice></Notice>)
     }
     else if(this.props.tab === "Inquiry"){
       return(<Inquiry onChangeTab={this.props.onChangeTab} inquiry_data={this.props.inquiry_data} addInquiryData={this.props.addInquiryData}></Inquiry>)

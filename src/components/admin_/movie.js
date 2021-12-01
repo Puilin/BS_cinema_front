@@ -8,6 +8,15 @@ import TableCell from '@material-ui/core/TableCell';
 
 class Movie extends Component {
     render() {
+        const stylebtn = {
+            width: '50px',
+            float: 'right',
+        }
+        const stylebtn2 = {
+            width: '50px',
+            float: 'right',
+            marginRight: '20px'
+        }
         const styleimage = {
             width: '100px',
             height: '100px'
@@ -47,6 +56,9 @@ class Movie extends Component {
                             </div>
                         </div>
                     </div>
+                    <button style={stylebtn2}>삭제</button>
+                    <button style={stylebtn}>추가</button>
+                    <br/>
                 </div>
                 <div>
                     <div>
@@ -55,22 +67,22 @@ class Movie extends Component {
                             <TableHead>
                                 <TableRow>
                                     <TableCell
-                                    style={{
+                                        style={{
                                             width: 100,
                                             textAlign: "center"
                                         }}>번호</TableCell>
-                                    <TableCell style={styleimage}
-                                    style={{
+                                    <TableCell
+                                        style={{
                                             width: 200,
                                             textAlign: "center"
                                         }}>포스터</TableCell>
                                     <TableCell
-                                    style={{
+                                        style={{
                                             width: 500,
                                             textAlign: "center"
                                         }}>영화 이름</TableCell>
                                     <TableCell
-                                    style={{
+                                        style={{
                                             width: 500,
                                             textAlign: "center"
                                         }}>상영예정일</TableCell>
@@ -79,12 +91,7 @@ class Movie extends Component {
                             <TableBody>
                                 {
                                     movie.map(c => {
-                                        return <Movie_chart 
-                                        key={c.id} 
-                                        id={c.id} 
-                                        image={c.image} 
-                                        name={c.name} 
-                                        date={c.date}/>
+                                        return <Movie_chart key={c.id} id={c.id} image={c.image} name={c.name} date={c.date}/>
                                     })
                                 }
                             </TableBody>
