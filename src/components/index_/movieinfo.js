@@ -607,6 +607,7 @@ class Movieinfo extends Component {
                   </div>
                 </div>
               </div>
+              <img src="/images/3.png"/>
             </div>
         );
     }
